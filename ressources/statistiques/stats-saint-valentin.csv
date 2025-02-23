@@ -1,0 +1,39 @@
+Evénement - Niveau 1;Evénement - Niveau 2;Evénement - Niveau 3;Evénement - Niveau 4;Evénements;CTR;;Evénement - Niveau 1;Evénement - Niveau 2;Evénement - Niveau 3;Evénement - Niveau 4;Evénements;CTR;;;;;;
+selligent;display;VDN_250122_undersocial_saint_valentin_phase_1 - undersocial;N/A;5665502;0,04%;;selligent;display;VDN_250214_undersocial_saint_valentin_phase_2 - undersocial;N/A;827206;0,12%;;;;;;
+selligent;click;VDN_250122_undersocial_saint_valentin_phase_1 - undersocial;cta playlist;2134;;;selligent;click;VDN_250214_undersocial_saint_valentin_phase_2 - undersocial;cta;968;;;;;;;
+selligent;display;VDN_250122_subheader_saint_valentin_phase_1 Promo - sub header;N/A;1382715;0,06%;;selligent;display;VDN_250214_subheader_saint_valentin_phase_2 Promo - sub header;N/A;132930;0,12%;;;;;;
+selligent;click;VDN_250122_subheader_saint_valentin_phase_1 CTA desktop;CTA desktop;498;;;selligent;click;VDN_250214_subheader_saint_valentin_phase_2 CTA desktop;CTA desktop;92;;;;;;;
+selligent;click;VDN_250122_subheader_saint_valentin_phase_1 CTA mobile;CTA mobile;322;;;selligent;click;VDN_250214_subheader_saint_valentin_phase_2 CTA mobile;CTA mobile;72;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+Date d'envoi;Nom du mail;Details clics;Nombre d'utilisateurs;Total clics;;;Date d'envoi;Nom du mail;Details clics;Nombre d'utilisateurs;Total clics;;;;;;;
+13/02/2025;Newsletter - VDN Quotidienne Matin;Saint-Valentin;14;15;;;20/02/2025;Newsletter - VDN Quotidienne Soir;saint-valentin-phase-2;57;66;;;;;;;
+13/02/2025;Newsletter - VDN Quotidienne Soir;saint-valentin;30;33;;;19/02/2025;Newsletter - VDN Quotidienne Soir;saint-valentin-phase-2;64;72;;;;;;;
+12/02/2025;Newsletter - VDN Quotidienne Soir;saint-valentin;49;58;;;18/02/2025;Newsletter - VDN Quotidienne Soir;saint-valentin-phase-2;52;63;;;;;;;
+11/02/2025;Newsletter - VDN Quotidienne Matin;Saint-Valentin;16;19;;;17/02/2025;Newsletter - VDN Quotidienne Soir;saint-valentin-phase-2;57;70;;;;;;;
+10/02/2025;Newsletter - VDN Quotidienne Matin;Saint-Valentin;18;21;;;16/02/2025;Newsletter - VDN Quotidienne Soir;saint-valentin-phase-2;57;67;;;;;;;
+10/02/2025;Newsletter - VDN Quotidienne Soir;saint-valentin;67;76;;;15/02/2025;Newsletter - VDN Quotidienne Soir;saint-valentin-phase-2;64;69;;;;;;;
+09/02/2025;Newsletter - VDN Quotidienne Matin;Saint-Valentin;13;18;;;14/02/2025;Newsletter - VDN Quotidienne Soir;saint-valentin-phase-2;80;99;;;;;;;
+08/02/2025;Newsletter - VDN Quotidienne Matin;Saint-Valentin;17;21;;;13/02/2025;Newsletter - VDN Quotidienne Soir;saint-valentin-phase-2;20;27;;;;;;;
+07/02/2025;Newsletter - VDN Quotidienne Soir;saint-valentin;55;66;;;;;;451;533;;;;;;;
+06/02/2025;Newsletter - VDN Quotidienne Matin;Saint-Valentin;17;20;;;;;;;;;;;;;;
+04/02/2025;Newsletter - VDN Quotidienne Matin;Saint-Valentin;15;17;;;Date d'envoi;Campagne;#Mails cibles;#Mails delivres;#Rebonds;Taux de delivrabilite;#Vues uniques;Taux d'ouverture;#Clics uniques;Taux de clic;Taux de reactivite;Taux de desabo
+03/02/2025;Newsletter - VDN Quotidienne Soir;saint-valentin;1;1;;;14/02/2025;VDN_20240214_FID_SAINT_VALENTIN_INSCRITS_CONSULTER;520107;519829;278;99,95%;69540;13,38%;2677;0,51%;3,85%;0,00%
+02/02/2025;Newsletter - VDN Quotidienne Matin;Saint-Valentin;20;22;;;14/02/2025;VDN_20240214_FID_SAINT_VALENTIN_ABO_CONSULTER;35636;35616;20;99,94%;10505;29,50%;489;1,37%;4,65%;0,00%
+31/01/2025;Newsletter - VDN Quotidienne Matin;Saint-Valentin;20;21;;;;;555743;555445;298;99,95%;80045;21,44%;3166;0,94%;4,25%;0,00%
+30/01/2025;Newsletter - VDN Quotidienne Matin;Saint-Valentin;15;16;;;;;;;;;;;;;;
+28/01/2025;Newsletter - VDN Quotidienne Matin;Saint-Valentin;12;13;;;;;;;;;;;;;;
+26/02/2025;Newsletter - VDN Quotidienne Matin;Saint-Valentin;12;15;;;;;;;;;;;;;;
+24/02/2025;Newsletter - VDN Quotidienne Matin;Saint-Valentin;12;13;;;;;;;;;;;;;;
+23/01/2025;Newsletter - VDN Quotidienne Matin;Saint-Valentin;43;54;;;;;;;;;;;;;;
+;;;446;519;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+Date d'envoi;Campagne;#Mails cibles;#Mails delivres;#Rebonds;Taux de delivrabilite;#Vues uniques;Taux d'ouverture;#Clics uniques;Taux de clic;Taux de reactivite;Taux de desabo;;;;;;;
+12/02/2025;VDN_20250122_FID_SAINT_VALENTIN_INSCRITS_RELANCE_2;520610;520285;325;99,94%;71140;13,67%;1146;0,22%;1,61%;0,00%;;;;;;;
+12/02/2025;VDN_20250122_FID_SAINT_VALENTIN_ABO_RELANCE_2;35661;35641;20;99,94%;11530;32,35%;206;0,58%;1,79%;0,00%;;;;;;;
+08/02/2025;VDN_20250122_FID_SAINT_VALENTIN_INSCRITS_RELANCE;522053;521748;305;99,94%;69170;13,26%;1084;0,21%;1,57%;0,00%;;;;;;;
+08/02/2025;VDN_20250122_FID_SAINT_VALENTIN_ABO_RELANCE;35787;35701;86;99,76%;11075;31,02%;251;0,70%;2,27%;0,00%;;;;;;;
+26/01/2025;VDN_20250126_FID_SAINT_VALENTIN_ABO;27838;27829;9;99,97%;7878;28,31%;135;0,49%;1,71%;0,00%;;;;;;;
+22/01/2025;VDN_20250122_FID_SAINT_VALENTIN_INSCRITS;525974;525637;337;99,94%;73608;14,00%;1495;0,28%;2,03%;0,00%;;;;;;;
+22/01/2025;VDN_20250122_FID_SAINT_VALENTIN_ABO;7951;7935;16;99,80%;2243;28,27%;49;0,62%;2,18%;0,00%;;;;;;;
+;;1675874;1674776;1098;99,90%;246644;22,98%;4366;0,44%;1,88%;0,00%;;;;;;;

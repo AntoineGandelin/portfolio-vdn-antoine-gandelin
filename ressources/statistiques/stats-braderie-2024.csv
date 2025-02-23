@@ -1,0 +1,19 @@
+Evénement - Niveau 1;Evénement - Niveau 2;Evénement - Niveau 3;Evénement - Niveau 4;Evénements;CTR;;;;;;
+selligent;display;VDN_240913_undersocial_Offre_braderie - undersocial;N/A;1281976;0,15%;;;;;;
+selligent;click;VDN_240913_undersocial_Offre_braderie - undersocial;cta;1987;;;;;;;
+selligent;display;VDN_240913_bandeau_sticky_Offre_braderie;N/A;681502;0,09%;;;;;;
+selligent;click;VDN_240913_bandeau_sticky_Offre_braderie;Clic;394;;;;;;;
+selligent;display;VDN_240913_bandeau_sticky_Offre_braderie;Offre affichée;237;;;;;;;
+selligent;display;VDN_240913_bandeau_btq_Offre_braderie - bandeau_btq;N/A;2734;0,84%;;;;;;
+selligent;click;VDN_240913_bandeau_btq_Offre_braderie - bandeau_btq;cta;23;;;;;;;
+selligent;display;VDN_240913_undersocial_Offre_braderie - pave;N/A;42;2,38%;;;;;;
+selligent;click;VDN_240913_undersocial_Offre_braderie - pave;cta;1;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+Date d'envoi;Campagne;#Mails cibles;#Mails delivres;#Rebonds;Taux de delivrabilite;#Vues uniques;Taux d'ouverture;#Clics uniques;Taux de clic;Taux de reactivite;Taux de desabo
+18/09/2024;VDN_20240918_TRANSAC_OFFRE_BRADERIE_DERNIER_JOUR;30744;30697;47;99,85%;6128;19,96%;83;0,27%;1,35%;0,00%
+15/09/2024;VDN_20240915_TRANSAC_OFFRE_BRADERIE_DERNIER_JOUR;30645;30578;67;99,78%;5400;17,66%;53;0,17%;0,98%;0,00%
+13/09/2024;VDN_20240913_TRANSAC_OFFRE_BRADERIE;39290;39196;94;99,76%;7718;19,69%;116;0,30%;1,50%;0,00%
+11/09/2024;VDN_20240904_FID_INVITATION_BRADERIE_INSCRITS;488981;488384;597;99,88%;66697;13,66%;1461;0,30%;2,19%;0,00%
+11/09/2024;VDN_20240904_FID_INVITATION_BRADERIE_ABONNES;38280;38259;21;99,95%;11160;29,17%;213;0,56%;1,91%;0,00%
+;;627940;627114;826;99,84%;97103;20,03%;1926;0,32%;1,59%;0,00%

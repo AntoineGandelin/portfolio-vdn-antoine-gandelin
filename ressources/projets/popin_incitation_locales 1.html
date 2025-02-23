@@ -1,0 +1,238 @@
+<body>
+    <style type="text/css">
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 1;
+            visibility: visible;
+            transition: opacity 0.3s ease;
+            z-index: 9999;
+        }
+
+        .popin {
+            position: fixed;
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            width: 90%;
+            max-width: 500px;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            transform: scale(1);
+            transition: transform 0.3s ease;
+            z-index: 10000;
+        }
+
+        .popin h2 {
+            font-size: 1.5em;
+            color: #003366;
+            margin-bottom: 10px;
+        }
+
+        .popin p {
+            font-size: 1em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .popin select {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .popin button {
+            background-color: #0073e6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 1em;
+            text-decoration: none;
+        }
+
+        .popin button:hover {
+            background-color: #005bb5;
+            color: white;
+            text-decoration: none;
+        }
+
+        .overlay.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .overlay.show .popin {
+            transform: scale(1);
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 1.2em;
+            color: #888888;
+            cursor: pointer;
+        }
+
+        .no-scroll {
+            overflow-y: hidden;
+            height: 100vh;
+        }
+
+        .popin-confirm {
+            display: none; /* Masqué par défaut */
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            z-index: 10001; /* Au-dessus de la popin */
+            text-align: center;
+            font-size: 1em;
+            color: #003366;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+
+        .popin-confirm.show {
+            display: block;
+            opacity: 1;
+            visibility: visible;
+        }
+
+        @media (max-width: 600px) {
+            .popin h2 {
+                font-size: 1.1em;
+            }
+            .popin p {
+                font-size: 0.9em;
+            }
+            .popin button {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+
+    <!-- Overlay contenant la pop-in -->
+    <div class="overlay" id="newsletterPopin">
+        <div class="popin">
+            <span class="close-btn" id="closeBtn" data-slg-action="Fermeture Popin" data-slg-offer="[%requestValue('OFFER')%]- [%requestValue('ACTION')%][%if(isnotempty(requestValue('CX_EDITOR')),concat(' - ',requestValue('CX_EDITOR')),'')%][%if(isnotempty(requestValue('CX_SUB_EDITOR')),concat(' - ',requestValue('CX_SUB_EDITOR')),'')%][%if(isnotempty(requestValue('CX_MEMBERSTATUS')),concat(' - ',requestValue('CX_MEMBERSTATUS')),'')%]" data-slg-tracker="[%requestValue('OFFER')%]">✖</span>
+            <h2>Retrouvez toute l'actualité de votre ville !</h2>
+            <p>Inscrivez-vous à notre newsletter pour recevoir les dernières nouvelles de votre commune.</p>
+            <!-- Formulaire d’inscription -->
+            <form>
+                <!-- Pensez à ajouter le bon optin pour chaque locale -->
+                <select required id="localeSelect">
+                    <option value="">Choisissez votre locale</option>
+                    <option value="Armentières">Armentières</option>
+                    <option value="Calais">Calais</option>
+                    <option value="Hazebrouck">Hazebrouck</option>
+                    <option value="Marcq - Lambersart">Marcq - Lambersart</option>
+                    <option value="Saint-Omer">Saint-Omer</option>
+                    <option value="Arrageois - Ternois">Arrageois - Ternois</option>
+                    <option value="Cambrai">Cambrai</option>
+                    <option value="Lens - Liévin - Hénin">Lens - Liévin - Hénin</option>
+                    <option value="Montreuil">Montreuil</option>
+                    <option value="Tourcoing">Tourcoing</option>
+                    <option value="Béthune - Bruay">Béthune - Bruay</option>
+                    <option value="Douai">Douai</option>
+                    <option value="Lille">Lille</option>
+                    <option value="Roubaix">Roubaix</option>
+                    <option value="Valenciennes">Valenciennes</option>
+                    <option value="Boulogne-sur-Mer">Boulogne-sur-Mer</option>
+                    <option value="Dunkerque">Dunkerque</option>
+                    <option value="Lomme, Loos et Les Weppes">Lomme, Loos et Les Weppes</option>
+                    <option value="Sambre - Avesnois">Sambre - Avesnois</option>
+                    <option value="Villeneuve - Seclin">Villeneuve - Seclin</option>
+                </select>
+                &nbsp;
+                <button type="submit" data-slg-action="Inscription" data-slg-offer="[%requestValue('OFFER')%] - [%requestValue('ACTION')%][%if(isnotempty(requestValue('CX_EDITOR')),concat(' - ',requestValue('CX_EDITOR')),'')%][%if(isnotempty(requestValue('CX_SUB_EDITOR')),concat(' - ',requestValue('CX_SUB_EDITOR')),'')%][%if(isnotempty(requestValue('CX_MEMBERSTATUS')),concat(' - ',requestValue('CX_MEMBERSTATUS')),'')%]" data-slg-tracker="[%requestValue('OFFER')%]"
+                href="">
+                Je m'inscris
+                </button>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Message de confirmation -->
+    <div class="popin-confirm" id="popinConfirm">
+        <h2>Merci !</h2>
+        <p id="confirmationMessage"></p>
+        <button id="closeConfirmBtn" style="background-color: #0073e6; color: white; border: none; border-radius: 5px; padding: 10px; cursor: pointer; font-size: 1em;">Fermer</button>
+    </div>
+
+    <sg:content-block name="cb_site_optinizer"  id="content-block-1"  />
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Afficher la popin après un délai de 10 secondes
+            setTimeout(function() {
+                const overlay = document.getElementById('newsletterPopin');
+                overlay.classList.add('show');
+                document.body.classList.add('no-scroll');
+            }, 10000);
+    
+            // Fermeture de la popin initiale avec la croix
+            document.getElementById('closeBtn').addEventListener('click', function() {
+                closeOverlay();
+            });
+    
+            // Soumission du formulaire
+            document.querySelector('.popin form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                closeOverlay();
+                showConfirmation();
+                // Récupère la ville sélectionnée
+                const selectedLocale = document.getElementById('localeSelect').value;
+        
+                if (selectedLocale) {
+                    // Met à jour le message de confirmation avec la ville choisie
+                    document.getElementById('confirmationMessage').innerText = `Vous êtes à présent inscrit à la newsletter de ${selectedLocale}.`;
+                }
+            });
+    
+            // Fermeture du message de confirmation
+            document.getElementById('closeConfirmBtn').addEventListener('click', function() {
+                closeConfirmation();
+            });
+    
+            // Fonction pour fermer la popin initiale
+            function closeOverlay() {
+                const overlay = document.getElementById('newsletterPopin');
+                overlay.style.opacity = '0';
+                setTimeout(() => {
+                    overlay.style.visibility = 'hidden';
+                    document.body.classList.remove('no-scroll');
+                }, 300);
+            }
+    
+            // Fonction pour afficher le message de confirmation
+            function showConfirmation() {
+                const popinConfirm = document.getElementById('popinConfirm');
+                popinConfirm.classList.add('show');
+            }
+    
+            // Fonction pour fermer le message de confirmation
+            function closeConfirmation() {
+                const popinConfirm = document.getElementById('popinConfirm');
+                popinConfirm.classList.remove('show');
+                document.body.classList.remove('no-scroll');
+            }
+        });
+    </script>
+
+    <sg:content-block name="cb_site_display_tracking"  id="content-block-2"  />
+</body>

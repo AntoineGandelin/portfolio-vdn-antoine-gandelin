@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InApp Notification Stop App VDS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(223, 223, 223, 0.521);
+            overflow: hidden; /* Empêche le défilement pour bloquer l'utilisateur */
+        }
+
+        .inapp-message {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            width: 90%;
+            height: 80%;
+            max-width: 85%;
+            max-height: 50%;
+            padding: 14px;
+            text-align: center;
+            overflow-y: auto;
+            align-content: center;
+        }
+
+        .inapp-message img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .body-text {
+            margin: 5px;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .subscribe-button {
+            display: inline-block;
+            padding: 10px;
+            background-color: red;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 6%;
+            border: none;
+        }
+
+        .secondary-window {
+            display: none;
+        }
+
+        .secondary-window.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Fenêtre InApp principale -->
+    <div class="inapp-message active" id="inapp-message">
+        <!-- Image -->
+        <img src="https://i.ibb.co/x2YzLDW/lvds.png" alt="image-app-vds" title="image-app-vds" height="150" width="150">
+
+        <!-- Description -->
+        <p>Toute l'actualité sportive de La Voix des Sports est maintenant dans l'appli <b>La Voix du Nord</b>. Télécharge-la pour ne rien manquer !</p>
+
+        <!-- Bouton de téléchargement -->
+        <button class="subscribe-button" id="openURL" onclick="openSecondaryWindow()" title="Je télécharge l'application">Je télécharge l'application</button>
+    </div>
+
+    <script>
+        // Fonction pour rediriger en fonction du modèle de téléphone
+        function openSecondaryWindow() {
+            var modelPhone = UAirship.getDeviceModel();
+
+            if (modelPhone.toLowerCase().includes("iphone")) {
+                // Redirection iOS
+                setTimeout(function() {
+                    UAirship.runAction("open_external_url_action", "https://apps.apple.com/fr/app/la-voix-du-nord-actualit%C3%A9s/id365660558", function() {return true});
+                }, 250);
+            } else if (modelPhone.toLowerCase().includes("android")) {
+                // Redirection Android
+                setTimeout(function() {
+                    UAirship.runAction("open_external_url_action", "https://play.google.com/store/apps/details?id=fr.lavoixdunord.android", function() {return true});
+                }, 250);
+            } else {
+                alert("Modèle de téléphone non reconnu. Veuillez accéder à l'App Store ou au Google Play Store manuellement.");
+            }
+        }
+    </script>
+</body>
+</html>

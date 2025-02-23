@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="title" content="Face aux lecteurs - Dany Boon" />
+    <title>Face aux lecteurs - Dany Boon</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="icon" href="ressources/logo-lvdn.png">
+
+    <style>
+        @media (max-width: 991px) {
+            .navbar-collapse {
+                background-color: #fff;
+            }
+            .navbar-nav {
+                width: 100%;
+                text-align: center;
+                margin-top: 10px;
+            }
+            .navbar-nav > li {
+                display: block;
+                margin-bottom: 10px;
+            }
+            .btn-lg {
+                font-size: 1rem;
+                padding: 12px 24px;
+            }
+            .img-fluid {
+                max-width: 100%;
+                height: auto;
+            }
+            .container {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            .footer-icons a {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+    
+</head>
+
+<body class="d-flex flex-column h-100 bg-white">
+
+
+<button id="backToTop" title="Retour en haut de la page" aria-label="Retour en haut">
+    ☝
+</button>
+
+<style>
+    #backToTop {
+        display: none;
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        z-index: 100;
+        width: 50px;
+        height: 50px;
+        background-color: #1b52bb;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 25px;
+        cursor: pointer;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    #backToTop:hover {
+        background-color: #0d3a8f;
+    }
+</style>
+
+<script>
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        const backToTopButton = document.getElementById("backToTop");
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    document.getElementById("backToTop").addEventListener("click", function() {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    });
+</script>
+
+<main class="flex-shrink-0">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3" aria-label="Navigation principale">
+        <div class="container px-5 d-flex align-items-center">
+            <a class="navbar-brand d-flex align-items-center" href="index.html" aria-label="Retour à l'accueil">
+                <img src="ressources/logo-lvdn.png" alt="Logo La Voix du Nord" class="me-2" style="height: 40px;">
+                <span class="fw-bolder text-primary">Portfolio - Antoine Gandelin</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Basculer la navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav text-center text-lg-start small fw-bolder">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" title="Accueil" aria-current="page">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#presentation" title="Qui suis-je ?">Qui suis-je ?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projets.html" title="Missions réalisées">Missions réalisées</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#impressions" title="Impressions">Impressions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#competences" title="Compétences">Compétences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#auto-evaluation" title="Auto-évaluation">Auto-évaluation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" title="Contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</main>
+</body>
+
+<section class="mission my-5">
+    <!-- Titre et visuel -->
+    <h2 class="text-center mb-4">Face aux lecteurs - Dany Boon 🎬</h2>
+    <div class="text-center mb-5">
+      <img src="ressources/visuels/encart-nl-fal-dany-boon.png" alt="Face aux lecteurs - Dany Boon" class="img-fluid shadow">
+    </div>
+  
+    <!-- Contexte et Objectifs -->
+    <div class="container bg-light p-4 rounded mb-5">
+      <h3 class="text-center">📌 Contexte &amp; Objectifs</h3>
+      <hr class="w-25 mx-auto mb-4">
+      <p>
+        <strong>Contexte :</strong> Dans le cadre du dispositif <em>Face aux lecteurs</em>, des personnalités publiques viennent échanger avec le public de La Voix du Nord. La <a href="https://www.lavoixdunord.fr/1552866/article/2025-02-08/la-scene-le-nord-la-celebrite-ses-enfants-dany-boon-se-confie-nos-lecteurs" target="_blank">rencontre avec Dany Boon</a> visait à renforcer l'engagement des lecteurs et à promouvoir une interaction directe avec cette figure emblématique de la région.
+      </p>
+      <p class="mt-3">
+        <strong>Objectif :</strong> Maximiser l’audience de l'événement, optimiser la participation et accroître l'engagement via des canaux digitaux.
+      </p>
+      <div class="row justify-content-center">
+        <div class="col-md-4 text-center">
+          <img src="ressources/visuels/photo-dany-boon.jfif" 
+               alt="Photo avec Dany Boon" 
+               class="img-fluid shadow mb-3" 
+               style="max-width:800px; height:400px;">
+        </div>
+      </div>
+    </div>
+  
+    <!-- Rôle et Actions Menées -->
+    <div class="container bg-light p-4 rounded mb-5">
+      <h3 class="text-center">🛠️ Rôle &amp; Actions</h3>
+      <hr class="w-25 mx-auto mb-4">
+      <ul>
+        <li>
+          <strong>Campagne d'emailing :</strong>
+          <ul>
+            <li>Conception et automatisation des envois d'e-mails (un pour les abonnés et un pour les inscrits) via Selligent.</li>
+            <li>Segmentation de l’audience pour cibler les utilisateurs les plus susceptibles de participer.</li>
+            <li>Analyse des performances (taux d'ouverture, CTR, impact sur les inscriptions...) avec Qlik.</li>
+          </ul>
+        </li>
+        <li class="mt-3">
+          <strong>Pop-in dédiée sur le site web :</strong>
+          <ul>
+            <li>Mise en place d’une pop-in incitant les visiteurs à s’inscrire à l'événement.</li>
+            <li>Réalisation de tests A/B sur le design et le wording pour maximiser le taux de conversion.</li>
+            <li>Suivi des performances et ajustements en temps réel.</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  
+    <!-- Outils et Compétences Mobilisées -->
+    <div class="container bg-light p-4 rounded mb-5">
+      <h3 class="text-center">💻 Outils &amp; Compétences</h3>
+      <hr class="w-25 mx-auto mb-4">
+      <p>
+        <strong>Outils utilisés :</strong>
+      </p>
+      <ul>
+        <li>Selligent</li>
+        <li>Piano Analytics</li>
+        <li>Qlik</li>
+        <li>Visual Studio Code</li>
+      </ul>
+      <p class="mt-3">
+        <strong>Compétences développées :</strong>
+      </p>
+      <ul>
+        <li>Gestion de campagnes e-mailing complexes (segmentation et automatisation avancée).</li>
+        <li>Optimisation de l’UX pour la conversion (pop-in responsive et tests A/B).</li>
+        <li>Analyse et suivi de performances avec des outils analytics.</li>
+        <li>Programmation HTML/CSS pour la pop-in</li>
+      </ul>
+    </div>
+  
+    <!-- Résultats Obtenus -->
+    <div class="container bg-light p-4 rounded mb-5">
+      <h3 class="text-center">📈 Résultats</h3>
+      <hr class="w-25 mx-auto mb-4">
+      <ul>
+        <li>
+          <strong>Pop-in :</strong> 551 clics sur le CTA pour participer au FAL de Dany Boon (CTR de 1,19% sur 46 483 affichages) et 37 499 clics sur la croix de fermeture (CTR de 80,67%).
+        </li>
+        <li>
+          <strong>Encart newsletter :</strong> 1 431 clics au total dans les Quotidiennes Matin et Soir pour 1 216 utilisateurs touchés.
+        </li>
+        <li>
+          <strong>Emailing :</strong> Envoi de plusieurs e-mails (un pour les abonnés et un autre pour les inscrits) à plus de 560 000 destinataires au total avec un taux d'ouverture de 24,52% (avec 85 043 vues uniques) et un taux de clics de 0,82% en moyenne (avec 2 065 clics uniques). De plus, le taux de réactivité est de 3,15% en moyenne et le taux de désabonnement est nul.
+        </li>
+      </ul>
+    </div>
+  
+    <!-- Impressions et Apprentissage -->
+    <div class="container bg-light p-4 rounded mb-5">
+      <h3 class="text-center">🔍 Impressions</h3>
+      <hr class="w-25 mx-auto mb-4">
+      <p>
+        <strong>Points forts :</strong> La campagne a su mobiliser l’audience grâce à une communication multicanal bien orchestrée. La segmentation précise et l’automatisation des e-mails via Selligent, combinées à une pop-in optimisée et à des tests A/B, ont permis d’augmenter significativement les inscriptions et d'obtenir un taux d’ouverture de 48%, bien au-dessus des standards. L'intervention d'une personnalité emblématique comme Dany Boon a renforcé l'engagement et la crédibilité de l'événement.
+      </p>
+      <p class="mt-3">
+        <strong>Points faibles :</strong> Le parcours utilisateur via la pop-in pourrait être simplifié pour réduire le taux d'abandon. Par ailleurs, une analyse plus granulaire des performances par canal permettrait d’identifier d'autres leviers d'optimisation pour maximiser l’engagement lors des prochaines éditions.
+      </p>
+    </div>
+  
+    <!-- Illustrations et Ressources -->
+    <div class="container bg-light p-4 rounded mb-5">
+      <h3 class="text-center">🖼️ Illustrations &amp; Ressources</h3>
+      <hr class="w-25 mx-auto mb-4">
+      <div class="d-flex flex-wrap justify-content-center gap-3">
+        <a href="ressources/visuels/pop-in-fal-dany-boon-desktop.PNG" class="btn btn-primary px-4 py-3" target="_blank">
+          Voir la pop-in desktop
+        </a>
+        <a href="ressources/visuels/pop-in-fal-dany-boon-mobile.PNG" class="btn btn-primary px-4 py-3" target="_blank">
+          Voir la pop-in mobile
+        </a>
+        <a href="ressources/visuels/encart-nl-fal-dany-boon.png" class="btn btn-primary px-4 py-3" target="_blank">
+          Voir l'encart newsletter
+        </a>
+        <a href="ressources/statistiques/stats-fal-dany-boon.csv" class="btn btn-primary px-4 py-3" download>
+          Voir les statistiques
+        </a>
+      </div>
+    </div>
+  
+    <!-- Téléchargement du projet -->
+    <div class="container my-5 text-center">
+      <p class="text-center">Si vous souhaitez télécharger le projet dans sa globalité, cliquez ci-dessous :</p>
+      <div class="d-flex justify-content-center">
+        <a class="btn btn-primary px-4 py-3" href="ressources/projets/fal-dany-boon.zip" download>
+          <i class="bi bi-download"></i>&nbsp; Télécharger le projet
+        </a>
+      </div>
+    </div>
+  </section>
+  
+
+    <section class="bg-light py-5" id="contact">
+        <div class="container px-5">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bolder">Un échange sur mon alternance à La Voix du Nord ? 🔎</h2>
+                    <p class="lead fw-normal mb-4">
+                        Si mon expérience et mes compétences t'intéressent, n'hésite pas à me contacter !
+                    </p>
+                    <div class="text-center">
+                        <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="contact.html"
+                            title="Me contacter">Me contacter
+                        </a>
+                    </div>
+                    <br><br>
+                    <h4 class="fw-bold">Restons connectés !</h4>
+                    <p class="mb-4">Tu peux également me joindre via ces plateformes :</p>
+                    <div class="d-flex justify-content-center fs-3 gap-4">
+                        <a class="text-gradient" href="mailto:antoine.gandelin@gmail.com" aria-label="Email"
+                            title="Email"><i class="bi bi-envelope"></i></a>
+                        <a class="text-gradient" href="tel:0651276733" aria-label="Téléphone" title="Téléphone"><i
+                                class="bi bi-telephone"></i></a>
+                        <a class="text-gradient" href="https://www.linkedin.com/in/antoine-gandelin/" target="_blank"
+                            rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+        </div>
+    </section>    
+  </main>
+
+  <footer class="bg-gradient-primary-to-secondary py-4 mt-auto">
+    <div class="container px-5">
+        <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+            <div class="col-auto">
+                <div class="small m-0 text-white">
+                    &copy; 2024-2025 <strong>Antoine Gandelin</strong> / <strong>La Voix du Nord</strong> &middot; 
+                    <a href="https://github.com/twbs/bootstrap/blob/v4.0.0/LICENSE" target="_blank" title="MIT Licence" class="text-white">MIT Licence</a>
+                </div>
+            </div>
+            <br>
+            <div class="col-auto">
+                <div class="d-flex gap-3">
+                    <a class="text-white" href="https://www.linkedin.com/in/antoine-gandelin/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    <a class="text-white" href="tel:0651276733" title="Téléphone"><i class="bi bi-telephone"></i></a>
+                    <a class="text-white" href="mailto:antoine.gandelin@gmail.com" title="Email"><i class="bi bi-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>    
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/scripts.js"></script>
+
+</body>
+
+</html>

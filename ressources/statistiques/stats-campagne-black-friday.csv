@@ -1,0 +1,20 @@
+Evénement - Niveau 1;Evénement - Niveau 2;Evénement - Niveau 3;Evénement - Niveau 4;Evénements;CTR
+selligent;display;VDN_241119_subheader_offre_black_friday Promo - sub header;N/A;2209509;0,02%
+selligent;click;VDN_241119_subheader_offre_black_friday CTA mobile;CTA mobile;295;
+selligent;click;VDN_241119_subheader_offre_black_friday CTA desktop;CTA desktop;76;
+selligent;display;VDN_241119_undersocial_offre_black_friday - undersocial;N/A;747902;0,11%
+selligent;click;VDN_241119_undersocial_offre_black_friday - undersocial;cta;796;
+selligent;display;VDN_241119_bandeau_btq_offre_black_friday - bandeau_btq_black_friday;N/A;4537;0,40%
+selligent;click;VDN_241119_bandeau_btq_offre_black_friday - bandeau_btq_black_friday;cta;18;
+;;;;;
+;;;;;
+Date d'envoi;Nom du mail;Details clics;Nombre d'utilisateurs;Total clics;
+02/12/2024;CX_VDN_VDN20241202_MDG - Edition Soir nonabo;cta_offre_black_friday;33;36;
+01/12/2024;CX_VDN_VDN20241201_MDG - Edition Soir nonabo;cta_offre_black_friday;28;31;
+30/11/2024;CX_VDN_VDN20241130_MDG - Edition Soir nonabo;cta_offre_black_friday;43;50;
+29/11/2024;CX_VDN_VDN20241129_MDG - Edition Soir nonabo;cta_offre_black_friday;54;60;
+28/11/2024;CX_VDN_VDN20241128_MDG - Edition Soir nonabo;cta_offre_black_friday;84;104;
+27/11/2024;CX_VDN_VDN20241127_MDG - Edition Soir nonabo;cta_offre_black_friday;78;97;
+26/11/2024;CX_VDN_VDN20241126_MDG - Edition Soir nonabo;cta_offre_black_friday;101;115;
+25/11/2024;CX_VDN_VDN20241125_MDG - Edition Soir nonabo;cta_offre_black_friday;86;99;
+;;;507;592;

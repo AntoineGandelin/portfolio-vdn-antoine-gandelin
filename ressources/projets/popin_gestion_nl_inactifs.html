@@ -1,0 +1,165 @@
+<body>
+    <style type="text/css">
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 0.3s ease;
+        z-index: 9999;
+    }
+
+    .popin {
+        max-width: 500px;
+        transform: scale(1);
+        transition: transform 0.3s ease;
+        z-index: 10000;
+    }
+
+    .popin-header {
+        background-color: #0854E8;
+        padding: 40px;
+        border-radius: 20px 20px 0px 0px;
+        text-align: center;
+    }
+
+    .popin-header h2 {
+        font-size: 1.5em;
+        color: white;
+        margin: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .popin-body {
+        background-color: white;
+        padding: 30px;
+        border-radius: 0px 0px 20px 20px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 1em;
+        color: #333;
+        margin-bottom: 20px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .btn {
+        background-color: #0854E8;
+        color: white;
+        border: none;
+        border-radius: 25px;
+        padding: 13px;
+        cursor: pointer;
+        font-size: 1em;
+        text-decoration: none;
+        font-weight: bold;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .btn:hover {
+        background-color: #0834C6;
+        color: white;
+        text-decoration: none;
+    }
+
+    .overlay.show {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .overlay.show .popin {
+        transform: scale(1);
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 1.2em;
+        color: white;
+        cursor: pointer;
+    }
+    
+    .no-scroll {
+        overflow: hidden;
+    }
+
+
+    @media (max-width: 600px) {
+        .popin {
+            max-width: 350px;
+        }
+        .popin-header {
+            padding: 30px;
+        }
+        .popin-body {
+            padding: 10px;
+        }
+        .popin h2 {
+            font-size: 1.1em;
+        }
+        .popin p {
+            font-size: 0.9em;
+        }
+        .popin button {
+            font-size: 0.9em;
+        }
+    }
+</style>
+
+    <!-- Overlay contenant la pop-in -->
+    <div class="overlay" id="newsletterPopin">
+        <div class="popin">
+            <div class="popin-header">
+                <span class="close-btn" id="closeBtn" data-slg-action="Fermeture Popin" data-slg-offer="[%requestValue('OFFER')%]- [%requestValue('ACTION')%][%if(isnotempty(requestValue('CX_EDITOR')),concat(' - ',requestValue('CX_EDITOR')),'')%][%if(isnotempty(requestValue('CX_SUB_EDITOR')),concat(' - ',requestValue('CX_SUB_EDITOR')),'')%][%if(isnotempty(requestValue('CX_MEMBERSTATUS')),concat(' - ',requestValue('CX_MEMBERSTATUS')),'')%]" data-slg-tracker="[%requestValue('OFFER')%]">✖</span>
+                <h2>Bon retour parmi nous ! 👋</h2>
+            </div>
+            <div class="popin-body">
+                <p>Nous sommes contents de vous retrouver !</p>
+                <p>Pour rester à l'affût des dernières actualités, personnalisez votre expérience en activant nos newsletters.</p>
+                <br>
+                <a class="btn" data-slg-action="Inscription" data-slg-offer="[%requestValue('OFFER')%] - [%requestValue('ACTION')%][%if(isnotempty(requestValue('CX_EDITOR')),concat(' - ',requestValue('CX_EDITOR')),'')%][%if(isnotempty(requestValue('CX_SUB_EDITOR')),concat(' - ',requestValue('CX_SUB_EDITOR')),'')%][%if(isnotempty(requestValue('CX_MEMBERSTATUS')),concat(' - ',requestValue('CX_MEMBERSTATUS')),'')%]" data-slg-tracker="[%requestValue('OFFER')%]" href="https://mon-compte.lavoixdunord.fr/newsletters">
+                    Gérer mes newsletters
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <sg:content-block name="cb_site_optinizer"  id="content-block-1"  />
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Afficher la popin après un délai de 10 secondes
+            setTimeout(function() {
+                const overlay = document.getElementById('newsletterPopin');
+                overlay.classList.add('show');
+                document.body.classList.add('no-scroll');
+            }, 10000);
+    
+            // Fermeture de la popin initiale avec la croix
+            document.getElementById('closeBtn').addEventListener('click', function() {
+                closeOverlay();
+            });
+    
+            // Fonction pour fermer la popin initiale
+            function closeOverlay() {
+                const overlay = document.getElementById('newsletterPopin');
+                overlay.style.opacity = '0';
+                setTimeout(() => {
+                    overlay.style.visibility = 'hidden';
+                    document.body.classList.remove('no-scroll');
+                }, 300);
+            }
+        });
+    </script>
+
+    <sg:content-block name="cb_site_display_tracking"  id="content-block-2"  />
+</body>

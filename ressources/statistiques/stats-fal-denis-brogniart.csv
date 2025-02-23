@@ -1,0 +1,24 @@
+Evénement - Niveau 1;Evénement - Niveau 2;Evénement - Niveau 3;Evénement - Niveau 4;Evénements;CTR;;;;;;
+selligent;display;VDN_250217_popin_fal_koh_lanta - popin;N/A;23294;X;;;;;;
+selligent;click;VDN_250217_popin_fal_koh_lanta- popin;fermeture pop-in;19328;82,97%;;;;;;
+selligent;click;VDN_250217_popin_fal_koh_lanta- popin;cta mobile;56;0,46%;;;;;;
+selligent;click;VDN_250217_popin_fal_koh_lanta- popin;cta desktop;50;;;;;;;
+;;;;;;;;;;;
+Date d'envoi;Nom du mail;Details clics;Nombre d'utilisateurs;Total clics;;;;;;;
+12/02/2025;Newsletter - VDN Quotidienne Matin;fal-denis-brogniart;14;15;;;;;;;
+11/02/2025;Newsletter - VDN Quotidienne Soir;fal-denis-brogniart;38;46;;;;;;;
+11/02/2025;Newsletter - VDN Quotidienne Matin;fal-denis-brogniart;7;8;;;;;;;
+10/02/2025;Newsletter - VDN Quotidienne Soir;fal-denis-brogniart;36;40;;;;;;;
+10/02/2025;Newsletter - VDN Quotidienne Matin;fal-denis-brogniart;21;24;;;;;;;
+09/02/2025;Newsletter - VDN Quotidienne Soir;fal-denis-brogniart;32;42;;;;;;;
+09/02/2025;Newsletter - VDN Quotidienne Matin;fal-denis-brogniart;5;7;;;;;;;
+08/02/2025;Newsletter - VDN Quotidienne Soir;fal-denis-brogniart;35;37;;;;;;;
+08/02/2025;Newsletter - VDN Quotidienne Matin;fal-denis-brogniart;12;13;;;;;;;
+07/02/2025;Newsletter - VDN Quotidienne Soir;fal-denis-brogniart;47;53;;;;;;;
+07/02/2025;Newsletter - VDN Quotidienne Soir;fal-denis-brogniart;46;52;;;;;;;
+;;;293;337;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+Date d'envoi;Campagne;#Mails cibles;#Mails delivres;#Rebonds;Taux de delivrabilite;#Vues uniques;Taux d'ouverture;#Clics uniques;Taux de clic;Taux de reactivite;Taux de desabo
+18/02/2025;VDN_20250218_FID_FAL_KOH_LANTA_REPLAY;35568;35559;9;99,97%;11844;33,31%;267;0,75%;2,25%;0,00%
+07/02/2025;VDN_20250206_FID_FAL_KOH_LANTA;568027;567649;378;99,93%;84642;14,91%;1100;0,19%;1,30%;0,00%

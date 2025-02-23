@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="title" content="Portfolio - Antoine Gandelin" />
+    <title>Portfolio - Antoine Gandelin</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="icon" href="ressources/logo-lvdn.png">
+
+    <style>
+        @media (max-width: 991px) {
+            .navbar-collapse {
+                background-color: #fff;
+            }
+
+            .navbar-nav {
+                width: 100%;
+                text-align: right;
+                margin-top: 10px;
+            }
+
+            .navbar-nav>li {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            .badge.bg-gradient-primary-to-secondary.text-white.mb-4 {
+                font-size: x-small;
+            }
+
+            .dropdown-item {
+                text-align: right;
+            }
+        }
+    </style>
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+</head>
+
+<body class="d-flex flex-column h-100 bg-white">
+
+
+<button id="backToTop" title="Retour en haut de la page" aria-label="Retour en haut">
+    ☝
+</button>
+
+<style>
+    #backToTop {
+        display: none;
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        z-index: 100;
+        width: 50px;
+        height: 50px;
+        background-color: #1b52bb;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 25px;
+        cursor: pointer;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    #backToTop:hover {
+        background-color: #0d3a8f;
+    }
+</style>
+
+<script>
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        const backToTopButton = document.getElementById("backToTop");
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    document.getElementById("backToTop").addEventListener("click", function() {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    });
+</script>
+
+<main class="flex-shrink-0">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3" aria-label="Navigation principale">
+        <div class="container px-5 d-flex align-items-center">
+            <a class="navbar-brand d-flex align-items-center" href="index.html" aria-label="Retour à l'accueil">
+                <img src="ressources/logo-lvdn.png" alt="Logo La Voix du Nord" class="me-2" style="height: 40px;">
+                <span class="fw-bolder text-primary">Portfolio - Antoine Gandelin</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Basculer la navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav text-center text-lg-start small fw-bolder">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" title="Accueil" aria-current="page">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#presentation" title="Qui suis-je ?">Qui suis-je ?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projets.html" title="Missions réalisées">Missions réalisées</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#impressions" title="Impressions">Impressions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#competences" title="Compétences">Compétences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#auto-evaluation" title="Auto-évaluation">Auto-évaluation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" title="Contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</main>
+</body>
+
+        <header class="bg-light py-5">
+            <div class="container px-5 pb-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-xxl-5">
+                        <section class="text-center text-xxl-start">
+                            <span
+                                class="badge bg-gradient-primary-to-secondary text-white mb-4 text-uppercase text-align-center">
+                                Chargé de CRM et Marketing digital en alternance
+                            </span>
+                            <div class="fs-3 fw-light">Bonjour ! Je m'appelle Antoine <span role="img"
+                                    aria-label="Salut">👋</span></div>
+                            <h1 class="display-4 fw-bolder mb-5">
+                                <span class="text-gradient d-inline">Bienvenue à <br>La Voix du Nord !</span>
+                            </h1>
+                            <div
+                                class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
+                                <a class="btn btn-primary btn-lg px-6 py-3 fs-6 fw-bolder" href="#presentation" title="Qui suis-je ?">
+                                    Qui suis-je ?
+                                </a> 
+                                <a class="btn btn-outline-dark btn-lg px-6 py-3 fs-6 fw-bolder" href="projets.html" title="Découvrir mes projets">
+                                    Découvrir mes projets
+                                </a>
+                                </button>
+                            </div>
+                        </section>
+                    </div>
+
+
+                    <div class="col-xxl-7">
+                        <div class="d-flex justify-content-center mt-5 mt-xxl-0">
+                            <div class="profile">
+                                <img class="profile-img" src="ressources/visuels/facade-vdn-80ans.jpg"
+                                    alt="Photo de candidature" style="border-radius: 50px" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="bg-white py-5" id="presentation">
+            <div class="container px-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10 text-center">
+                        <h2 class="display-5 fw-bolder mb-4">
+                            <span class="text-gradient d-inline">À propos de moi</span>
+                        </h2>
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="ressources/photo-antoine-gandelin.webp" alt="Photo de candidature" class="img-fluid rounded-circle shadow-lg mb-4" style="width: 250px; height: 250px; object-fit: cover;">
+                        </div>
+                        <p class="lead fw-light mb-4">
+                            Je m'appelle <strong>Antoine Gandelin</strong>, étudiant en <strong>Master 2 "Communication numérique"</strong> à l'<a href="https://www.univ-catholille.fr/" target="_blank" rel="noopener noreferrer" title="Lien vers le site de l'Université Catholique de Lille">Université Catholique de Lille</a>. Depuis septembre 2024, je réalise mon alternance en tant que <strong>Chargé de CRM & Marketing digital</strong> chez <a href="https://www.lavoixdunord.fr/" target="_blank" rel="noopener noreferrer" title="Lien vers le site de l'entreprise La Voix du Nord">La Voix du Nord</a> 🚀
+                        </p>
+                        <p class="text-dark">
+                            Mon rôle consiste à concevoir, déployer et analyser des campagnes digitales, en utilisant des outils tels que <strong>Selligent</strong> et <strong>Airship</strong>, afin d'atteindre des objectifs marketing précis.
+                        </p>
+                        <p class="text-dark">
+                            Ce portfolio met en avant les projets auxquels j'ai contribué durant ma première période d'alternance, ainsi qu'une <strong>auto-évaluation</strong> de mon expérience professionnelle et académique.
+                        </p>
+                        <a class="btn btn-primary btn-lg px-5 py-3 fs-6 fw-bolder mt-3" href="https://www.linkedin.com/in/antoine-gandelin/" target="_blank" title="En savoir plus">
+                            En savoir plus
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>        
+
+        <section class="bg-light py-5" id="missions">
+            <div class="container">
+                <div class="row">
+                    <div class="container px-5 my-5">
+                        <div class="text-center mb-5">
+                            <h2 class="display-5 fw-bolder mb-0">
+                                <span class="text-gradient d-inline">Missions réalisées</span>
+                            </h2>
+                            <br>
+                            <p>
+                                Dès mon premier semestre en alternance, j’ai rapidement trouvé ma place au sein de l’équipe digitale et ai eu l’opportunité de participer 
+                                activement à divers projets stratégiques. Voici un aperçu des missions auxquelles j’ai contribué récemment :
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card mb-4 shadow-sm">
+                            <div class="hover11 column">
+                                <div>
+                                    <div class="image-container">
+                                        <a class="text-dark" href="fal-denis-brogniart.html"><img class="card-img-top"
+                                                src="ressources/visuels/header-fal-denis-brogniart.png" alt="header-fal-denis-brogniart"><button
+                                                type="button" class="image-button btn btn-sm btn-outline-primary">Voir
+                                                le projet</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h4>Face aux lecteurs - Denis Brogniart</h4>
+                                <p class="card-text">
+                                    Rencontre exclusive avec Denis Brogniart le lundi 17 février 2025 au siège de La Voix du Nord à Lille. Une opportunité unique d’engager notre audience et de renforcer la visibilité de l’événement.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card mb-4 shadow-sm">
+                            <div class="hover11 column">
+                                <div>
+                                    <div class="image-container">
+                                        <a class="text-dark" href="saint-valentin.html"><img class="card-img-top"
+                                                src="ressources/visuels/header-saint-valentin.png" alt="header-saint-valentin"><button
+                                                type="button" class="image-button btn btn-sm btn-outline-primary">Voir
+                                                le projet</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h4>Saint-Valentin</h4>
+                                <p class="card-text">
+                                    À l'occasion de la Saint-Valentin, une campagne marketing a été déployée pour engager notre audience, maximisant ainsi visibilité et interactions.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card mb-4 shadow-sm">
+                            <div class="hover11 column">
+                                <div>
+                                    <div class="image-container">
+                                        <a class="text-dark" href="enduropale-2025.html"><img class="card-img-top"
+                                                src="ressources/visuels/encart-nl-jeu-enduropale.png" alt="encart-nl-jeu-enduropale"><button
+                                                type="button" class="image-button btn btn-sm btn-outline-primary">Voir
+                                                le projet</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h4>Enduropale 2025</h4>
+                                <p class="card-text">
+                                    Course emblématique du Pas-de-Calais, l'Enduropale a rassemblé pilotes et passionnés du 7 au 9 février 2025 au Touquet. Une opportunité unique d'engagement et de visibilité pour La Voix des Sports.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="projets.html"
+                            title="Voir les autres projets">Voir les autres projets
+                        </a>
+                    </div>
+
+        </section>
+
+        <section class="bg-white py-5" id="impressions">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <h2 class="text-center display-5 fw-bolder mb-4">
+                            <span class="text-gradient d-inline">Mes impressions</span>
+                        </h2>
+                        <br>
+                        <div class="row align-items-start">
+                            <div class="col-md-4 text-center d-flex align-items-center justify-content-center">
+                                <img src="ressources/visuels/mur-vdn.jpg" alt="Mur La Voix du Nord" class="img-fluid rounded shadow-lg" style="max-height: 100%; width: auto;">
+                            </div>
+                            <div class="col-md-8">
+                                <p class="text-justify px-3">
+                                    Dès mes premiers jours chez <strong>La Voix du Nord</strong>, j’ai ressenti une <strong>intégration fluide</strong> et une forte dynamique de travail au sein de l’équipe digitale. L’environnement, marqué par <strong>l’innovation</strong> et la diversité des projets, m’a permis de monter en compétences rapidement.
+                                </p>
+                                <p class="text-justify px-3">
+                                    J’ai particulièrement apprécié la diversité des missions qui m’ont été confiées, allant de la <strong>gestion de campagnes e-mailing</strong> à la mise en place de dispositifs <strong>marketing cross-canal</strong>. Chaque projet a été une occasion d’apprendre, tant sur le plan <strong>technique</strong> (automatisation, CRM) que <strong>stratégique</strong> (optimisation des parcours utilisateurs, engagement de l’audience).
+                                </p>
+                                <p class="text-justify px-3">
+                                    Les défis ont été nombreux, notamment la gestion simultanée de plusieurs campagnes avec des objectifs différents. L’alternance m’a permis d’affiner ma capacité d’adaptation et ma rigueur organisationnelle. J’ai également pu développer une <strong>approche analytique</strong> en exploitant les données pour ajuster et améliorer les performances des campagnes.
+                                </p>
+                                <p class="text-justify px-3">
+                                    Travailler au sein d’un <strong>média reconnu</strong> m’a aussi permis d’approfondir ma compréhension des attentes des lecteurs et abonnés, et de mieux cerner les enjeux du <strong>marketing digital appliqué à la presse</strong>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>                 
+        
+        <section class="bg-light py-5" id="competences">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <h2 class="text-center display-6 fw-bolder mb-4">
+                            <span class="text-gradient d-inline">Compétences développées</span>
+                        </h2>
+                        <p class="text-start font-italic">Mon alternance chez La Voix du Nord m’a permis d’acquérir et de consolider de nombreuses compétences clés dans le domaine du marketing digital et du CRM, notamment :</p>                        
+                        <div class="row align-items-stretch">
+                            <div class="col-md-8 d-flex flex-column justify-content-center">
+                                <h4 class="mt-3">CRM & Marketing digital</h4>
+                                <ul class="text-start small">
+                                    <li>Participation à la réflexion et à la mise en place de campagnes ciblées et personnalisées en fonction des segments d’audience.</li>
+                                    <li>Déploiement des campagnes omnicanales (emails, SMS, pop-in, bannières, messages in-app) et mise en place d’une automatisation optimisée.</li>
+                                    <li>Gestion du cycle de vie client en activant les bons leviers marketing pour maximiser la fidélisation et l’acquisition.</li>
+                                    <li>Veille régulière sur les tendances et innovations CRM afin d'améliorer la performance des campagnes et les parcours utilisateurs.</li>
+                                </ul>                
+                                <h4 class="mt-3">Paramétrage et optimisation des campagnes</h4>
+                                <ul class="text-start small">
+                                    <li>Utilisation avancée des outils de marketing automation (Selligent, AirShip) pour la segmentation, le routage et l’automatisation des campagnes.</li>
+                                    <li>Réalisation de tests A/B sur les objets, les contenus et les CTA pour optimiser les taux d’ouverture, de clic et de conversion.</li>
+                                    <li>Suivi en temps réel et ajustement des campagnes en fonction des performances.</li>
+                                    <li>Coordination avec les équipes graphiques et éditoriales pour assurer la cohérence et l’efficacité des campagnes.</li>
+                                </ul>
+                                <h4 class="mt-3">Analyse des performances et recommandations</h4>
+                                <ul class="text-start small">
+                                    <li>Création et suivi de tableaux de bord analytiques pour mesurer l’efficacité des campagnes et des dispositifs marketing.</li>
+                                    <li>Analyse des données collectées (comportement utilisateur, segmentation) pour optimiser les stratégies marketing.</li>
+                                    <li>Élaboration de bilans et recommandations à destination des équipes marketing et e-commerce pour améliorer la performance des actions mises en place.</li>
+                                    <li>Contribution à l’évolution des outils CRM en proposant des optimisations et des innovations pour fluidifier l’expérience utilisateur.</li>
+                                </ul>
+                                <h4 class="mt-3">Gestion de projet et coordination</h4>
+                                <ul class="text-start small">
+                                    <li>Pilotage et suivi des projets CRM en collaboration avec les équipes techniques et marketing.</li>
+                                    <li>Participation aux réunions stratégiques pour l’évolution des outils et des fonctionnalités CRM.</li>
+                                    <li>Gestion de plusieurs campagnes en simultané tout en respectant les deadlines et en priorisant les actions à forte valeur ajoutée.</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 text-center d-flex align-items-stretch">
+                                <img src="ressources/visuels/open-space-vdn.JPG" alt="Open space La Voix du Nord" class="img-fluid rounded shadow-lg w-100 h-100" style="object-fit: cover; max-height: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>               
+
+        <section class="bg-white py-5" id="auto-evaluation">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="text-center mb-5">
+                            <h2 class="display-5 fw-bolder mb-4">
+                                <span class="text-gradient d-inline">Auto-évaluation</span>
+                            </h2>
+                            <p class="lead">Cette section synthétise mes impressions et retours d'expérience concernant mon premier semestre d'alternance à <strong>La Voix du Nord</strong>.</p>
+                        </div>
+                        <div class="card shadow-lg p-4 border-0 rounded-3">
+                            <h3 class="mt-3 text-primary">Points positifs</h3>
+                            <ul class="list-unstyled text-start ps-3">
+                                <li><i class="bi bi-check-circle-fill text-success"></i>&nbsp; Intégration réussie au sein de l'équipe digitale de La Voix du Nord</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i>&nbsp; Adéquation entre les missions confiées et les objectifs pédagogiques de mon Master</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i>&nbsp; Acquisition de compétences en CRM, analyse de données et marketing automation</li>
+                            </ul>
+                        </div>
+                        <div class="card shadow-lg p-4 border-0 rounded-3 mt-4">
+                            <h3 class="text-warning">Axe d'amélioration</h3>
+                            <p class="mb-3">Améliorer ma maîtrise de l'outil <strong>Airship</strong> pour optimiser l'envoi des push notifications et des messages in-app.</p>
+                        </div>
+                        <div class="card shadow-lg p-4 border-0 rounded-3 mt-4">
+                            <h3 class="text-success">Objectifs pour le second semestre</h3>
+                            <ul class="list-unstyled text-start ps-3">
+                                <li><i class="bi bi-arrow-right-circle-fill text-primary"></i>&nbsp; Participer à des projets stratégiques de plus grande envergure</li>
+                                <li><i class="bi bi-arrow-right-circle-fill text-primary"></i>&nbsp; Renforcer mes compétences en data marketing et reporting avancé</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>        
+        
+        <section class="bg-light py-5" id="contact">
+            <div class="container px-5">
+                    <div class="text-center mb-5">
+                        <h2 class="fw-bolder">Un échange sur mon alternance à La Voix du Nord ? 🔎</h2>
+                        <p class="lead fw-normal mb-4">
+                            Si mon expérience et mes compétences t'intéressent, n'hésite pas à me contacter !
+                        </p>
+                        <div class="text-center">
+                            <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="contact.html"
+                                title="Me contacter">Me contacter
+                            </a>
+                        </div>
+                        <br><br>
+                        <h4 class="fw-bold">Restons connectés !</h4>
+                        <p class="mb-4">Tu peux également me joindre via ces plateformes :</p>
+                        <div class="d-flex justify-content-center fs-3 gap-4">
+                            <a class="text-gradient" href="mailto:antoine.gandelin@gmail.com" aria-label="Email"
+                                title="Email"><i class="bi bi-envelope"></i></a>
+                            <a class="text-gradient" href="tel:0651276733" aria-label="Téléphone" title="Téléphone"><i
+                                    class="bi bi-telephone"></i></a>
+                            <a class="text-gradient" href="https://www.linkedin.com/in/antoine-gandelin/" target="_blank"
+                                rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+            </div>
+        </section>        
+
+        <footer class="bg-gradient-primary-to-secondary py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto">
+                        <div class="small m-0 text-white">
+                            &copy; 2024-2025 <strong>Antoine Gandelin</strong> / <strong>La Voix du Nord</strong> &middot; 
+                            <a href="https://github.com/twbs/bootstrap/blob/v4.0.0/LICENSE" target="_blank" title="MIT Licence" class="text-white">MIT Licence</a>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-auto">
+                        <div class="d-flex gap-3">
+                            <a class="text-white" href="https://www.linkedin.com/in/antoine-gandelin/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                            <a class="text-white" href="tel:0651276733" title="Téléphone"><i class="bi bi-telephone"></i></a>
+                            <a class="text-white" href="mailto:antoine.gandelin@gmail.com" title="Email"><i class="bi bi-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>        
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>		

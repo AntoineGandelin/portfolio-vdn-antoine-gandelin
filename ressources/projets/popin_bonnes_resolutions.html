@@ -1,0 +1,171 @@
+<html>
+<body>
+    <style type="text/css">
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 1;
+            visibility: visible;
+            transition: opacity 0.3s ease;
+            z-index: 9999;
+        }
+
+        .popin {
+            display: flex;
+            flex-direction: row;
+            max-width: 1050px;
+            max-height: 300px;
+            background-color: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+
+        .popin-image-desktop {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f4;
+        }
+
+        .popin-image-mobile {
+            display: none;
+        }
+
+        .popin-content {
+            flex: 1.5;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            margin: 0 0 15px;
+        }
+
+        p {
+            font-size: 1em;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            background-color: #FF8BD2;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            padding: 13px 25px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: bold;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background-color: #2658CC;
+            text-decoration: none;
+            color: white;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 1em;
+            color: #333;
+            cursor: pointer;
+            font-weight: bold;
+            background-color: #fff;
+            border-radius: 15px;
+            padding: 5px;
+        }
+
+        .close-btn:hover {
+            background-color: #ff4d4d;
+            color: white;
+        }
+
+@media (max-width: 1050px) {
+    .popin {
+        flex-direction: column;
+        max-width: 350px;
+        position: fixed;
+        max-height: 550px;
+    }
+
+    .popin-image-desktop {
+        display: none;
+    }
+
+    .popin-image-mobile {
+        display: block;
+        height: auto;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    p {
+        font-size: 0.8em;
+    }
+
+    .btn {
+        font-size: 0.9em;
+    }
+}
+    </style>
+
+    <div class="overlay" id="LivePopin">
+        <div class="popin">
+            <span class="close-btn" id="closeBtn" data-slg-action="Fermeture Popin" data-slg-offer="[%requestValue('OFFER')%]- [%requestValue('ACTION')%][%if(isnotempty(requestValue('CX_EDITOR')),concat(' - ',requestValue('CX_EDITOR')),'')%][%if(isnotempty(requestValue('CX_SUB_EDITOR')),concat(' - ',requestValue('CX_SUB_EDITOR')),'')%][%if(isnotempty(requestValue('CX_MEMBERSTATUS')),concat(' - ',requestValue('CX_MEMBERSTATUS')),'')%]" data-slg-tracker="[%requestValue('OFFER')%]">✖</span>
+            <div class="popin-image-desktop">
+                <a href="https://espace-abonnement.lavoixdunord.fr/bonnes_resolutions" data-slg-action="Image desktop" data-slg-offer="[%requestValue('OFFER')%] - [%requestValue('ACTION')%][%if(isnotempty(requestValue('CX_EDITOR')),concat(' - ',requestValue('CX_EDITOR')),'')%][%if(isnotempty(requestValue('CX_SUB_EDITOR')),concat(' - ',requestValue('CX_SUB_EDITOR')),'')%][%if(isnotempty(requestValue('CX_MEMBERSTATUS')),concat(' - ',requestValue('CX_MEMBERSTATUS')),'')%]" data-slg-tracker="[%requestValue('OFFER')%]">
+                    <img src="https://espace-abonnement.lavoixdunord.fr/sites/default/files/mediastore/1737449766_popin_desktop_famille-urb_600x300px.png" alt="Image Desktop">
+                </a>
+            </div>
+            <div class="popin-image-mobile">
+                <a href="https://espace-abonnement.lavoixdunord.fr/bonnes_resolutions" data-slg-action="Image mobile" data-slg-offer="[%requestValue('OFFER')%] - [%requestValue('ACTION')%][%if(isnotempty(requestValue('CX_EDITOR')),concat(' - ',requestValue('CX_EDITOR')),'')%][%if(isnotempty(requestValue('CX_SUB_EDITOR')),concat(' - ',requestValue('CX_SUB_EDITOR')),'')%][%if(isnotempty(requestValue('CX_MEMBERSTATUS')),concat(' - ',requestValue('CX_MEMBERSTATUS')),'')%]" data-slg-tracker="[%requestValue('OFFER')%]">
+                    <img src="https://espace-abonnement.lavoixdunord.fr/sites/default/files/mediastore/1737449712_popin_mobile_famille-urb_350x250px.png" alt="Image Mobile">
+                </a>
+            </div>
+            <div class="popin-content">
+                <h2>Commencez l'année 2025 avec de bonnes résolutions !</h2>
+                <p>Abonnez-vous à notre offre 100 % digitale : <strong>accès complet, partout, tout le temps. 7,45 € au lieu de <strike>14,90 €</strike> pendant 6 mois (-50%).</strong></p>
+                <br>
+                <a class="btn" href="https://espace-abonnement.lavoixdunord.fr/bonnes_resolutions" data-slg-action="Bouton CTA" data-slg-offer="[%requestValue('OFFER')%] - [%requestValue('ACTION')%][%if(isnotempty(requestValue('CX_EDITOR')),concat(' - ',requestValue('CX_EDITOR')),'')%][%if(isnotempty(requestValue('CX_SUB_EDITOR')),concat(' - ',requestValue('CX_SUB_EDITOR')),'')%][%if(isnotempty(requestValue('CX_MEMBERSTATUS')),concat(' - ',requestValue('CX_MEMBERSTATUS')),'')%]" data-slg-tracker="[%requestValue('OFFER')%]">J'en profite dès maintenant</a>
+            </div>
+        </div>
+    </div>
+
+    <sg:content-block id="content-block-1" name="cb_site_optinizer" />
+
+    <script>
+        const closeBtn = document.getElementById('closeBtn');
+        const overlay = document.getElementById('LivePopin');
+
+        closeBtn.addEventListener('click', () => {
+            overlay.style.opacity = '0';
+            setTimeout(() => {
+                overlay.style.visibility = 'hidden';
+            }, 300);
+        });
+    </script>
+    <sg:content-block id="content-block-2" name="cb_site_display_tracking" />
+</body>
+</html>

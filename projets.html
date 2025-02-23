@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="title" content="Projets - Antoine Gandelin" />
+    <title>Projets - Antoine Gandelin</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="icon" href="ressources/logo-lvdn.png">
+
+    <style>
+        @media (max-width: 991px) {
+            .navbar-collapse {
+                background-color: #fff;
+            }
+
+            .navbar-nav {
+                width: 100%;
+                text-align: right;
+                margin-top: 10px;
+            }
+
+            .navbar-nav>li {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            .badge.bg-gradient-primary-to-secondary.text-white.mb-4 {
+                font-size: x-small;
+            }
+
+            .dropdown-item {
+                text-align: right;
+            }
+        }
+    </style>
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+</head>
+
+<body class="d-flex flex-column h-100 bg-white">
+
+
+<button id="backToTop" title="Retour en haut de la page" aria-label="Retour en haut">
+    ☝
+</button>
+
+<style>
+    #backToTop {
+        display: none;
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        z-index: 100;
+        width: 50px;
+        height: 50px;
+        background-color: #1b52bb;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 25px;
+        cursor: pointer;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    #backToTop:hover {
+        background-color: #0d3a8f;
+    }
+</style>
+
+<script>
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        const backToTopButton = document.getElementById("backToTop");
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    document.getElementById("backToTop").addEventListener("click", function() {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    });
+</script>
+
+<main class="flex-shrink-0">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3" aria-label="Navigation principale">
+        <div class="container px-5 d-flex align-items-center">
+            <a class="navbar-brand d-flex align-items-center" href="index.html" aria-label="Retour à l'accueil">
+                <img src="ressources/logo-lvdn.png" alt="Logo La Voix du Nord" class="me-2" style="height: 40px;">
+                <span class="fw-bolder text-primary">Portfolio - Antoine Gandelin</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Basculer la navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav text-center text-lg-start small fw-bolder">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" title="Accueil" aria-current="page">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#presentation" title="Qui suis-je ?">Qui suis-je ?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projets.html" title="Missions réalisées">Missions réalisées</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#impressions" title="Impressions">Impressions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#competences" title="Compétences">Compétences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#auto-evaluation" title="Auto-évaluation">Auto-évaluation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" title="Contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</main>
+</body>
+
+    <section class="bg-light py-5">
+      <div class="container">
+        <div class="row" id="projects-container">
+          <div class="container px-5 my-5">
+            <div class="text-center mb-5">
+              <h1 class="display-5 fw-bolder mb-0">
+                <span class="text-gradient d-inline">Mes missions réalisées ce semestre</span>
+              </h1>
+            </div>
+          </div>
+
+            <!-- Filtrage avancé -->
+            <div class="mb-4 text-center">
+                <label for="filter-category" class="fw-bold">Filtrer par : </label>
+                <select id="filter-category" class="form-select w-auto d-inline-block">
+                    <option value="all">Tous les projets</option>
+                    <option value="communication">Communication</option>
+                    <option value="fidelisation">Fidélisation</option>
+                    <option value="transactionnel">Transactionnel</option>
+                </select>
+            </div>
+
+          <div class="col-lg-4 col-md-6 col-12 project-item" data-category="fidelisation">
+            <div class="card mb-4 shadow-sm">
+                <div class="hover11 column">
+                    <div>
+                        <div class="image-container">
+                            <a class="text-dark" href="fal-denis-brogniart.html"><img class="card-img-top"
+                                    src="ressources/visuels/header-fal-denis-brogniart.png" alt="header-fal-denis-brogniart"><button
+                                    type="button" class="image-button btn btn-sm btn-outline-primary">Voir
+                                    le projet</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h4>Face aux lecteurs - Denis Brogniart</h4>
+                    <p class="card-text">
+                        Rencontre exclusive avec Denis Brogniart le lundi 17 février 2025 au siège de La Voix du Nord à Lille. Une opportunité unique d’engager notre audience et de renforcer la visibilité de l’événement.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12 project-item" data-category="fidelisation">
+            <div class="card mb-4 shadow-sm">
+                <div class="hover11 column">
+                    <div>
+                        <div class="image-container">
+                            <a class="text-dark" href="saint-valentin.html"><img class="card-img-top"
+                                    src="ressources/visuels/header-saint-valentin.png" alt="header-saint-valentin"><button
+                                    type="button" class="image-button btn btn-sm btn-outline-primary">Voir
+                                    le projet</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h4>Saint-Valentin</h4>
+                    <p class="card-text">
+                        À l'occasion de la Saint-Valentin, une campagne marketing a été déployée pour engager notre audience, maximisant ainsi visibilité et interactions.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12 project-item" data-category="communication">
+            <div class="card mb-4 shadow-sm">
+                <div class="hover11 column">
+                    <div>
+                        <div class="image-container">
+                            <a class="text-dark" href="enduropale-2025.html"><img class="card-img-top"
+                                    src="ressources/visuels/encart-nl-jeu-enduropale.png" alt="encart-nl-jeu-enduropale"><button
+                                    type="button" class="image-button btn btn-sm btn-outline-primary">Voir
+                                    le projet</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h4>Enduropale 2025</h4>
+                    <p class="card-text">
+                        Course emblématique du Pas-de-Calais, l'Enduropale a rassemblé pilotes et passionnés du 7 au 9 février 2025 au Touquet. Une opportunité unique d'engagement et de visibilité pour La Voix des Sports.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12 project-item" data-category="fidelisation">
+            <div class="card mb-4 shadow-sm">
+                <div class="hover11 column">
+                    <div>
+                        <div class="image-container">
+                            <a class="text-dark" href="fal-dany-boon.html"><img class="card-img-top"
+                                    src="ressources/visuels/encart-nl-fal-dany-boon.png" alt="encart-nl-fal-dany-boon"><button
+                                    type="button" class="image-button btn btn-sm btn-outline-primary">Voir
+                                    le projet</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h4>Face aux lecteurs - Dany Boon</h4>
+                    <p class="card-text">
+                        Promotion du dispositif "Face aux lecteurs" avec la venue de Dany Boon le 5 février 2025 au siège de La Voix du Nord à Lille.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12 project-item" data-category="communication">
+            <div class="card mb-4 shadow-sm">
+                <div class="hover11 column">
+                    <div>
+                        <div class="image-container">
+                            <a class="text-dark" href="live-match-rcme.html"><img class="card-img-top"
+                                    src="ressources/visuels/popin_live_match_massy.PNG" alt="popin_live_match_massy"><button
+                                    type="button" class="image-button btn btn-sm btn-outline-primary">Voir
+                                    le projet</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h4>Match du Rugby Club Massy Essonne</h4>
+                    <p class="card-text">
+                        Diffusion du match du RCME en direct sur La Voix des Sports le samedi 25 janvier 2025. Une occasion stratégique de renforcer l’engagement des supporters et la visibilité du rugby sur nos plateformes.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12 project-item" data-category="communication">
+            <div class="card mb-4 shadow-sm">
+                <div class="hover11 column">
+                    <div>
+                        <div class="image-container">
+                            <a class="text-dark" href="live-match-omr.html"><img class="card-img-top"
+                                    src="ressources/visuels/popin_live_match_omr.PNG" alt="popin_live_match_omr"><button
+                                    type="button" class="image-button btn btn-sm btn-outline-primary">Voir
+                                    le projet</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h4>Match de l'Olympique Marcquois Rugby</h4>
+                    <p class="card-text">
+                        Diffusion du match de l'OMR en direct sur La Voix des Sports le samedi 18 janvier 2025. Une occasion stratégique de renforcer l’engagement des supporters et la visibilité du rugby sur nos plateformes.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12 project-item" data-category="fidelisation">
+            <div class="card mb-4 shadow-sm">
+                <div class="hover11 column">
+                    <div>
+                        <div class="image-container">
+                            <a class="text-dark" href="sportif-de-2024.html"><img class="card-img-top"
+                                    src="ressources/visuels/header-sportif-de-2024.png" alt="header-sportif-de-2024"><button
+                                    type="button" class="image-button btn btn-sm btn-outline-primary">Voir
+                                    le projet</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h4>Sportif de l'année</h4>
+                    <p class="card-text">
+                        Élection du sportif régional de 2024 sur La Voix des Sports, un événement phare mobilisant la communauté sportive et renforçant l’engagement autour des performances de l’année.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12 project-item" data-category="communication">
+            <div class="card mb-4 shadow-sm">
+                <div class="hover11 column">
+                    <div>
+                        <div class="image-container">
+                            <a class="text-dark" href="50-ans-catastrophe-lievin.html"><img class="card-img-top"
+                                    src="ressources/visuels/encart-nl-50ans-lievin.png" alt="encart-nl-50ans-lievin"><button
+                                    type="button" class="image-button btn btn-sm btn-outline-primary">Voir
+                                    le projet</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h4>50 ans - Catastrophe de Liévin</h4>
+                    <p class="card-text">
+                        Commémoration des 50 ans de la catastrophe minière de Liévin, un hommage digital et éditorial pour sensibiliser et engager notre audience autour de cet événement historique.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12 project-item" data-category="transactionnel">
+            <div class="card mb-4 shadow-sm">
+                <div class="hover11 column">
+                    <div>
+                        <div class="image-container">
+                            <a class="text-dark" href="offre-abo-noel.html"><img class="card-img-top"
+                                    src="ressources/visuels/header-offre-abo-noel.png" alt="header-offre-abo-noel"><button
+                                    type="button" class="image-button btn btn-sm btn-outline-primary">Voir
+                                    le projet</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h4>Offre d'abonnement - Noël</h4>
+                    <p class="card-text">
+                        Promotion de l’offre d’abonnement spécial Noël de La Voix du Nord, une opportunité exclusive pour fidéliser notre audience et offrir un accès privilégié à l’actualité régionale.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12 project-item" data-category="fidelisation">
+            <div class="card mb-4 shadow-sm">
+                <div class="hover11 column">
+                    <div>
+                        <div class="image-container">
+                            <a class="text-dark" href="jeu-noel.html"><img class="card-img-top"
+                                    src="ressources/visuels/header-jeu-noel.png" alt="header-jeu-noel"><button
+                                    type="button" class="image-button btn btn-sm btn-outline-primary">Voir
+                                    le projet</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h4>Grand jeu de Noël</h4>
+                    <p class="card-text">
+                        Lancement du grand jeu concours de Noël de La Voix du Nord, une opération festive visant à engager notre audience et renforcer l’interaction à travers des dotations exclusives.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12 project-item" data-category="communication">
+            <div class="card mb-4 shadow-sm">
+                <div class="hover11 column">
+                    <div>
+                        <div class="image-container">
+                            <a class="text-dark" href="atlas-eco.html"><img class="card-img-top"
+                                    src="ressources/visuels/encart-nl-atlas-eco-1.png" alt="encart-nl-atlas-eco-1"><button
+                                    type="button" class="image-button btn btn-sm btn-outline-primary">Voir
+                                    le projet</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h4>Nouveauté - Atlas Éco</h4>
+                    <p class="card-text">
+                        Sortie du nouvel Atlas Éco, un contenu de référence pour analyser les dynamiques économiques, offrant une opportunité de valorisation éditoriale et d’engagement auprès de notre audience.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12 project-item" data-category="communication">
+            <div class="card mb-4 shadow-sm">
+                <div class="hover11 column">
+                    <div>
+                        <div class="image-container">
+                            <a class="text-dark" href="journee-du-climat.html"><img class="card-img-top"
+                                    src="ressources/visuels/header-journee-du-climat.png" alt=""><button
+                                    type="button" class="image-button btn btn-sm btn-outline-primary">Voir
+                                    le projet</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h4>Journée mondiale du climat</h4>
+                    <p class="card-text">
+                        Promotion de la journée du climat le 8 décembre 2024, une initiative engagée pour sensibiliser et mobiliser notre audience autour des enjeux environnementaux.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12 project-item" data-category="transactionnel">
+            <div class="card mb-4 shadow-sm">
+                <div class="hover11 column">
+                    <div>
+                        <div class="image-container">
+                            <a class="text-dark" href="offre-abo-black-friday.html"><img class="card-img-top"
+                                    src="ressources/visuels/header-offre-black-friday.png" alt="header-offre-black-friday"><button
+                                    type="button" class="image-button btn btn-sm btn-outline-primary">Voir
+                                    le projet</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h4>Offre d'abonnement - Black Friday</h4>
+                    <p class="card-text">
+                        Promotion de l’offre d’abonnement spécial Black Friday de La Voix du Nord, une opportunité exclusive pour attirer de nouveaux abonnés avec une offre avantageuse et renforcer la fidélisation.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12 project-item" data-category="fidelisation">
+            <div class="card mb-4 shadow-sm">
+                <div class="hover11 column">
+                    <div>
+                        <div class="image-container">
+                            <a class="text-dark" href="fal-santa.html"><img class="card-img-top"
+                                    src="ressources/visuels/header-fal-santa.png" alt="header-fal-santa"><button
+                                    type="button" class="image-button btn btn-sm btn-outline-primary">Voir
+                                    le projet</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h4>Face aux lecteurs - Santa</h4>
+                    <p class="card-text">
+                        Rencontre exclusive avec la chanteuse Santa le 22 novembre 2024 dans le cadre de Face aux Lecteurs, une opportunité unique d’engager notre audience et de renforcer l’interaction entre l’artiste et ses fans.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12 project-item" data-category="communication">
+            <div class="card mb-4 shadow-sm">
+                <div class="hover11 column">
+                    <div>
+                        <div class="image-container">
+                            <a class="text-dark" href="derby-du-nord.html"><img class="card-img-top"
+                                    src="ressources/visuels/header-derby-du-nord.png" alt="header-derby-du-nord"><button
+                                    type="button" class="image-button btn btn-sm btn-outline-primary">Voir
+                                    le projet</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h4>Derby du Nord - Lens vs Lille</h4>
+                    <p class="card-text">
+                        Promotion du Derby du Nord Lens vs Lille (26 octobre 2024) avec une offre d’abonnement spéciale, la mise en avant de la verticale Derby sur La Voix des Sports et un jeu-concours pour gagner deux places.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12 project-item" data-category="communication">
+            <div class="card mb-4 shadow-sm">
+                <div class="hover11 column">
+                    <div>
+                        <div class="image-container">
+                            <a class="text-dark" href="serie-documentaire-lili-keller.html"><img class="card-img-top"
+                                    src="ressources/visuels/header-lili-keller.png" alt="header-lili-keller"><button
+                                    type="button" class="image-button btn btn-sm btn-outline-primary">Voir
+                                    le projet</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h4>Série documentaire - Lili Keller</h4>
+                    <p class="card-text">
+                        Promotion de la série documentaire sur Lili Keller-Rosenberg, un récit poignant mis en avant pour sensibiliser et engager notre audience autour de son histoire.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12 project-item" data-category="communication">
+            <div class="card mb-4 shadow-sm">
+                <div class="hover11 column">
+                    <div>
+                        <div class="image-container">
+                            <a class="text-dark" href="demain-dunkerque.html"><img class="card-img-top"
+                                    src="ressources/visuels/header-demain-dunkerque.png" alt="header-demain-dunkerque"><button
+                                    type="button" class="image-button btn btn-sm btn-outline-primary">Voir
+                                    le projet</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h4>Demain Dunkerque</h4>
+                    <p class="card-text">
+                        Promotion de Demain Dunkerque, une initiative mettant en lumière les projets d’avenir de la ville, visant à informer et engager notre audience sur les transformations du territoire.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12 project-item" data-category="fidelisation">
+            <div class="card mb-4 shadow-sm">
+                <div class="hover11 column">
+                    <div>
+                        <div class="image-container">
+                            <a class="text-dark" href="trucmuche.html"><img class="card-img-top"
+                                    src="ressources/visuels/header-trucmuche.png" alt="header-trucmuche"><button
+                                    type="button" class="image-button btn btn-sm btn-outline-primary">Voir
+                                    le projet</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h4>Jeu du Trucmuche 2024</h4>
+                    <p class="card-text">
+                        Lancement du Jeu du Trucmuche, une opération ludique et engageante visant à divertir notre audience et renforcer l’interaction avec nos lecteurs.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12 project-item" data-category="transactionnel">
+            <div class="card mb-4 shadow-sm">
+                <div class="hover11 column">
+                    <div>
+                        <div class="image-container">
+                            <a class="text-dark" href="braderie-de-lille.html"><img class="card-img-top"
+                                    src="ressources/visuels/encart-nl-braderie.png" alt="encart-nl-braderie"><button
+                                    type="button" class="image-button btn btn-sm btn-outline-primary">Voir
+                                    le projet</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h4>Braderie de Lille</h4>
+                    <p class="card-text">
+                        Couverture digitale de la Braderie de Lille 2024, un événement incontournable dynamisé par des contenus interactifs et une information en temps réel.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12 project-item" data-category="transactionnel">
+            <div class="card mb-4 shadow-sm">
+                <div class="hover11 column">
+                    <div>
+                        <div class="image-container">
+                            <a class="text-dark" href="80-ans-voix-du-nord.html"><img class="card-img-top"
+                                    src="ressources/visuels/encart-nl-offre-80-ans.png" alt="encart-nl-offre-80-ans"><button
+                                    type="button" class="image-button btn btn-sm btn-outline-primary">Voir
+                                    le projet</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h4>80 ans de La Voix du Nord</h4>
+                    <p class="card-text">
+                        Célébration des 80 ans de La Voix du Nord, une campagne historique mettant en avant l’héritage du journal à travers des contenus exclusifs et interactifs, accompagnée d’une offre d’abonnement numérique spéciale pour l’occasion.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script>
+        document.getElementById("filter-category").addEventListener("change", function () {
+            let selectedCategory = this.value;
+            let projects = document.querySelectorAll(".project-item");
+            
+            projects.forEach(function (project) {
+                if (selectedCategory === "all" || project.getAttribute("data-category") === selectedCategory) {
+                    project.style.display = "block";
+                } else {
+                    project.style.display = "none";
+                }
+            });
+        });
+    </script>
+
+    <section class="bg-light py-5" id="contact">
+        <div class="container px-5">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bolder">Un échange sur mon alternance à La Voix du Nord ? 🔎</h2>
+                    <p class="lead fw-normal mb-4">
+                        Si mon expérience et mes compétences t'intéressent, n'hésite pas à me contacter !
+                    </p>
+                    <div class="text-center">
+                        <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="contact.html"
+                            title="Me contacter">Me contacter
+                        </a>
+                    </div>
+                    <br><br>
+                    <h4 class="fw-bold">Restons connectés !</h4>
+                    <p class="mb-4">Tu peux également me joindre via ces plateformes :</p>
+                    <div class="d-flex justify-content-center fs-3 gap-4">
+                        <a class="text-gradient" href="mailto:antoine.gandelin@gmail.com" aria-label="Email"
+                            title="Email"><i class="bi bi-envelope"></i></a>
+                        <a class="text-gradient" href="tel:0651276733" aria-label="Téléphone" title="Téléphone"><i
+                                class="bi bi-telephone"></i></a>
+                        <a class="text-gradient" href="https://www.linkedin.com/in/antoine-gandelin/" target="_blank"
+                            rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+        </div>
+    </section>    
+  </main>
+
+  <footer class="bg-gradient-primary-to-secondary py-4 mt-auto">
+    <div class="container px-5">
+        <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+            <div class="col-auto">
+                <div class="small m-0 text-white">
+                    &copy; 2024-2025 <strong>Antoine Gandelin</strong> / <strong>La Voix du Nord</strong> &middot; 
+                    <a href="https://github.com/twbs/bootstrap/blob/v4.0.0/LICENSE" target="_blank" title="MIT Licence" class="text-white">MIT Licence</a>
+                </div>
+            </div>
+            <br>
+            <div class="col-auto">
+                <div class="d-flex gap-3">
+                    <a class="text-white" href="https://www.linkedin.com/in/antoine-gandelin/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    <a class="text-white" href="tel:0651276733" title="Téléphone"><i class="bi bi-telephone"></i></a>
+                    <a class="text-white" href="mailto:antoine.gandelin@gmail.com" title="Email"><i class="bi bi-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>       
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

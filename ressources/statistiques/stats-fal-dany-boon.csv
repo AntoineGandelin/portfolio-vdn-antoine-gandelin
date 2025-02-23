@@ -1,0 +1,30 @@
+Evénement - Niveau 1;Evénement - Niveau 2;Evénement - Niveau 3;Evénement - Niveau 4;Evénements;CTR;;;;;;
+selligent;display;VDN_250123_popin_fal_dany_boon - popin;N/A;46483;X;;;;;;
+selligent;click;VDN_250123_popin_fal_dany_boon- popin;Fermeture Popin;37499;80,67%;;;;;;
+selligent;click;VDN_250123_popin_fal_dany_boon - popin;CTA Qualifio;551;1,19%;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+Date d'envoi;Nom du mail;Details clics;Nombre d'utilisateurs;Total clics;;;;;;;
+30/01/2025;Newsletter - VDN Quotidienne Matin;Self-promotion;13;16;;;;;;;
+30/01/2025;Newsletter - VDN Quotidienne Soir;Self-promotion;137;167;;;;;;;
+29/01/2025;Newsletter - VDN Quotidienne Matin;Self-promotion;14;14;;;;;;;
+29/01/2025;Newsletter - VDN Quotidienne Soir;Self-promotion;122;142;;;;;;;
+28/01/2025;Newsletter - VDN Quotidienne Matin;Self-promotion;15;17;;;;;;;
+28/01/2025;Newsletter - VDN Quotidienne Soir;Self-promotion;92;107;;;;;;;
+27/01/2025;Newsletter - VDN Quotidienne Matin;Self-promotion;18;18;;;;;;;
+27/01/2025;Newsletter - VDN Quotidienne Soir;Self-promotion;152;177;;;;;;;
+26/01/2025;Newsletter - VDN Quotidienne Matin;Self-promotion;17;19;;;;;;;
+26/01/2025;Newsletter - VDN Quotidienne Soir;Self-promotion;120;151;;;;;;;
+25/01/2025;Newsletter - VDN Quotidienne Matin;Self-promotion;23;25;;;;;;;
+25/01/2025;Newsletter - VDN Quotidienne Soir;Self-promotion;159;184;;;;;;;
+24/01/2025;Newsletter - VDN Quotidienne Matin;Self-promotion;38;44;;;;;;;
+24/01/2025;Newsletter - VDN Quotidienne Soir;Self-promotion;95;113;;;;;;;
+23/01/2025;Newsletter - VDN Quotidienne Matin;Self-promotion;10;11;;;;;;;
+23/01/2025;Newsletter - VDN Quotidienne Soir;Self-promotion;191;226;;;;;;;
+;;;1216;1431;;;;;;;
+;;;;;;;;;;;
+Date d'envoi;Campagne;#Mails cibles;#Mails delivres;#Rebonds;Taux de delivrabilite;#Vues uniques;Taux d'ouverture;#Clics uniques;Taux de clic;Taux de reactivite;Taux de desabo
+24/01/2025;VDN_20250124_FID_FAL_DANY_BOON_ABOS;27943;27913;30;99,89%;8452;30,28%;295;1,06%;3,49%;0,00%
+23/01/2025;VDN_20250123_FID_FAL_DANY_BOON_INSCRITS;525526;525154;372;99,93%;74339;14,16%;1687;0,32%;2,27%;0,00%
+23/01/2025;VDN_20250123_FID_FAL_DANY_BOON_ABOS;7743;7736;7;99,91%;2252;29,11%;83;1,07%;3,69%;0,00%
+;;561212;560803;409;99,91%;85043;24,52%;2065;0,82%;3,15%;0,00%

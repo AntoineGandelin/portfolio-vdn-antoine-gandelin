@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="title" content="Offre abo - Black Friday" />
+    <title>Offre abo - Black Friday</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="icon" href="ressources/logo-lvdn.png">
+
+    <style>
+        @media (max-width: 991px) {
+            .navbar-collapse {
+                background-color: #fff;
+            }
+            .navbar-nav {
+                width: 100%;
+                text-align: center;
+                margin-top: 10px;
+            }
+            .navbar-nav > li {
+                display: block;
+                margin-bottom: 10px;
+            }
+            .btn-lg {
+                font-size: 1rem;
+                padding: 12px 24px;
+            }
+            .img-fluid {
+                max-width: 100%;
+                height: auto;
+            }
+            .container {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            .footer-icons a {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+    
+</head>
+
+<body class="d-flex flex-column h-100 bg-white">
+
+
+<button id="backToTop" title="Retour en haut de la page" aria-label="Retour en haut">
+    ☝
+</button>
+
+<style>
+    #backToTop {
+        display: none;
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        z-index: 100;
+        width: 50px;
+        height: 50px;
+        background-color: #1b52bb;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 25px;
+        cursor: pointer;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    #backToTop:hover {
+        background-color: #0d3a8f;
+    }
+</style>
+
+<script>
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        const backToTopButton = document.getElementById("backToTop");
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    document.getElementById("backToTop").addEventListener("click", function() {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    });
+</script>
+
+<main class="flex-shrink-0">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3" aria-label="Navigation principale">
+        <div class="container px-5 d-flex align-items-center">
+            <a class="navbar-brand d-flex align-items-center" href="index.html" aria-label="Retour à l'accueil">
+                <img src="ressources/logo-lvdn.png" alt="Logo La Voix du Nord" class="me-2" style="height: 40px;">
+                <span class="fw-bolder text-primary">Portfolio - Antoine Gandelin</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Basculer la navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav text-center text-lg-start small fw-bolder">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" title="Accueil" aria-current="page">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#presentation" title="Qui suis-je ?">Qui suis-je ?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projets.html" title="Missions réalisées">Missions réalisées</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#impressions" title="Impressions">Impressions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#competences" title="Compétences">Compétences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#auto-evaluation" title="Auto-évaluation">Auto-évaluation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" title="Contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</main>
+</body>
+
+<section class="mission my-5">
+    <!-- Titre et visuel -->
+    <h2 class="text-center mb-4">Offre d'abonnement - Black Friday 💥</h2>
+    <div class="text-center mb-5">
+      <img src="ressources/visuels/header-offre-black-friday.png" alt="Header offre Black Friday" class="img-fluid shadow" width="800px" height="400px">
+    </div>
+  
+    <!-- Contexte et Objectifs -->
+    <div class="container bg-light p-4 rounded mb-5">
+      <h3 class="text-center">📌 Contexte &amp; Objectifs</h3>
+      <hr class="w-25 mx-auto mb-4">
+      <p>
+        <strong>Contexte :</strong> Profitant de l'effervescence du Black Friday, La Voix du Nord a lancé une offre d'abonnement exclusive afin de capter l'attention de sa communauté et d'attirer de nouveaux abonnés. Cette offre spéciale a été conçue pour valoriser des avantages uniques et renforcer l'engagement durant cette période d'achats massifs.
+      </p>
+      <p class="mt-3">
+        <strong>Objectif :</strong> Augmenter le nombre d'abonnements, stimuler l'engagement via des contenus interactifs sur le site et optimiser la conversion grâce à une communication ciblée pendant le Black Friday.
+      </p>
+    </div>
+  
+    <!-- Rôle et Actions Menées -->
+    <div class="container bg-light p-4 rounded mb-5">
+      <h3 class="text-center">🛠️ Rôle &amp; Actions</h3>
+      <hr class="w-25 mx-auto mb-4">
+      <strong>Campagne d'emailing :</strong>
+      <ul>
+        <li>Programmation des envois d'e-mails promotionnels via Selligent pour abonnés et prospects.</li>
+        <li>Segmentation de l’audience pour maximiser la pertinence des messages.</li>
+        <li>Analyse des performances (taux d'ouverture, CTR, conversions) via Qlik.</li>
+      </ul>
+      <strong>Création de contenus interactifs sur le site :</strong>
+      <ul>
+        <li>Mise en place d’un undersocial interactif et d’un bandeau promotionnel pour valoriser l'offre.</li>
+        <li>Réalisation de tests A/B sur le design et le wording pour optimiser la conversion.</li>
+        <li>Suivi des interactions en temps réel via Piano Analytics.</li>
+      </ul>
+      <strong>Encarts dans les newsletters :</strong>
+      <ul>
+        <li>Intégration d'encarts visuels dans les newsletters (Matin &amp; Soir) pour promouvoir l'offre.</li>
+        <li>Suivi des performances et impact sur les inscriptions via Qlik.</li>
+      </ul>
+    </div>
+  
+    <!-- Outils et Compétences Mobilisées -->
+    <div class="container bg-light p-4 rounded mb-5">
+      <h3 class="text-center">💻 Outils &amp; Compétences</h3>
+      <hr class="w-25 mx-auto mb-4">
+      <p><strong>Outils utilisés :</strong></p>
+      <ul>
+        <li>Selligent</li>
+        <li>Piano Analytics</li>
+        <li>Qlik</li>
+        <li>Visual Studio Code</li>
+      </ul>
+      <p class="mt-3"><strong>Compétences développées :</strong></p>
+      <ul>
+        <li>Gestion de campagnes d'emailing promotionnelles.</li>
+        <li>Création et optimisation de contenus interactifs sur le site.</li>
+        <li>Analyse et suivi des performances via des outils analytics.</li>
+        <li>Programmation HTML/CSS pour les scénarios site</li>
+      </ul>
+    </div>
+  
+    <!-- Résultats Obtenus -->
+    <div class="container bg-light p-4 rounded mb-5">
+      <h3 class="text-center">📈 Résultats</h3>
+      <hr class="w-25 mx-auto mb-4">
+      <ul>
+        <li>
+          <strong>Undersocial (du 19/11 au 02/12) :</strong> Génération de 796 clics sur le CTA pour 747 902 affichages, atteignant un CTR de 0,11%.
+        </li>
+        <li>
+          <strong>Subheader (du 19/11 au 02/12) :</strong> Génération de 371 clics sur le CTA (dont 76 sur desktop et 295 sur mobile) pour 2 209 509 affichages, atteignant un CTR de 0,02%.
+        </li>
+        <li>
+          <strong>Bandeau boutique (du 19/11 au 02/12) :</strong> Génération de 19 clics sur le CTA pour 4 537 affichages, atteignant un CTR de 0,40%.
+        </li>
+        <li>
+          <strong>Encart newsletter (du 25/11 au 02/12) :</strong> 592 clics obtenus au total sur l'encart newsletter (Quotidienne Soir) avec 507 utilisateurs touchés, générant un impact notable sur les conversions.
+        </li>
+      </ul>
+    </div>
+  
+    <!-- Impressions et Apprentissage -->
+    <div class="container bg-light p-4 rounded mb-5">
+      <h3 class="text-center">🔍 Impressions</h3>
+      <hr class="w-25 mx-auto mb-4">
+      <p>
+        <strong>Points forts :</strong> La campagne a tiré parti de l'excitation du Black Friday pour proposer une offre exclusive, générant un fort engagement et un grand nombre d'inscriptions.
+      </p>
+      <p class="mt-3">
+        <strong>Points faibles :</strong> Le parcours utilisateur pour accéder à l'offre pourrait être simplifié pour maximiser la conversion. Un suivi plus détaillé par canal permettrait d'optimiser la stratégie pour les futures éditions.
+      </p>
+    </div>
+  
+    <!-- Illustrations et Ressources -->
+    <div class="container bg-light p-4 rounded mb-5">
+      <h3 class="text-center">🖼️ Illustrations &amp; Ressources</h3>
+      <hr class="w-25 mx-auto mb-4">
+      <div class="d-flex flex-wrap justify-content-center gap-3">
+        <a href="ressources/visuels/" class="btn btn-primary px-4 py-3" target="_blank">
+          Voir l'undersocial
+        </a>
+        <a href="ressources/visuels/" class="btn btn-primary px-4 py-3" target="_blank">
+          Voir le subheader
+        </a>
+        <a href="ressources/visuels/encart-nl-offre-black-friday.png" class="btn btn-primary px-4 py-3" target="_blank">
+          Voir l'encart newsletter
+        </a>
+        <a href="ressources/statistiques/stats-offre-black-friday.ods" class="btn btn-primary px-4 py-3" download>
+          Voir les statistiques
+        </a>
+      </div>
+    </div>
+  
+    <!-- Téléchargement du Projet -->
+    <div class="container my-5 text-center">
+      <p class="text-center">Si vous souhaitez télécharger le projet dans sa globalité, cliquez ci-dessous :</p>
+      <div class="d-flex justify-content-center">
+        <a class="btn btn-primary px-4 py-3" href="ressources/projets/offre-abo-black-friday.zip" download>
+          <i class="bi bi-download"></i>&nbsp; Télécharger le projet
+        </a>
+      </div>
+    </div>
+  </section>
+  
+
+    <section class="bg-light py-5" id="contact">
+        <div class="container px-5">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bolder">Un échange sur mon alternance à La Voix du Nord ? 🔎</h2>
+                    <p class="lead fw-normal mb-4">
+                        Si mon expérience et mes compétences t'intéressent, n'hésite pas à me contacter !
+                    </p>
+                    <div class="text-center">
+                        <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="contact.html"
+                            title="Me contacter">Me contacter
+                        </a>
+                    </div>
+                    <br><br>
+                    <h4 class="fw-bold">Restons connectés !</h4>
+                    <p class="mb-4">Tu peux également me joindre via ces plateformes :</p>
+                    <div class="d-flex justify-content-center fs-3 gap-4">
+                        <a class="text-gradient" href="mailto:antoine.gandelin@gmail.com" aria-label="Email"
+                            title="Email"><i class="bi bi-envelope"></i></a>
+                        <a class="text-gradient" href="tel:0651276733" aria-label="Téléphone" title="Téléphone"><i
+                                class="bi bi-telephone"></i></a>
+                        <a class="text-gradient" href="https://www.linkedin.com/in/antoine-gandelin/" target="_blank"
+                            rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+        </div>
+    </section>    
+  </main>
+
+  <footer class="bg-gradient-primary-to-secondary py-4 mt-auto">
+    <div class="container px-5">
+        <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+            <div class="col-auto">
+                <div class="small m-0 text-white">
+                    &copy; 2024-2025 <strong>Antoine Gandelin</strong> / <strong>La Voix du Nord</strong> &middot; 
+                    <a href="https://github.com/twbs/bootstrap/blob/v4.0.0/LICENSE" target="_blank" title="MIT Licence" class="text-white">MIT Licence</a>
+                </div>
+            </div>
+            <br>
+            <div class="col-auto">
+                <div class="d-flex gap-3">
+                    <a class="text-white" href="https://www.linkedin.com/in/antoine-gandelin/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    <a class="text-white" href="tel:0651276733" title="Téléphone"><i class="bi bi-telephone"></i></a>
+                    <a class="text-white" href="mailto:antoine.gandelin@gmail.com" title="Email"><i class="bi bi-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>    
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/scripts.js"></script>
+
+</body>
+
+</html>

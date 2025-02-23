@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="title" content="Grand jeu de Noël" />
+    <title>Grand jeu de Noël</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="icon" href="ressources/logo-lvdn.png">
+
+    <style>
+        @media (max-width: 991px) {
+            .navbar-collapse {
+                background-color: #fff;
+            }
+            .navbar-nav {
+                width: 100%;
+                text-align: center;
+                margin-top: 10px;
+            }
+            .navbar-nav > li {
+                display: block;
+                margin-bottom: 10px;
+            }
+            .btn-lg {
+                font-size: 1rem;
+                padding: 12px 24px;
+            }
+            .img-fluid {
+                max-width: 100%;
+                height: auto;
+            }
+            .container {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            .footer-icons a {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+    
+</head>
+
+<body class="d-flex flex-column h-100 bg-white">
+
+
+<button id="backToTop" title="Retour en haut de la page" aria-label="Retour en haut">
+    ☝
+</button>
+
+<style>
+    #backToTop {
+        display: none;
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        z-index: 100;
+        width: 50px;
+        height: 50px;
+        background-color: #1b52bb;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 25px;
+        cursor: pointer;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    #backToTop:hover {
+        background-color: #0d3a8f;
+    }
+</style>
+
+<script>
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        const backToTopButton = document.getElementById("backToTop");
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    document.getElementById("backToTop").addEventListener("click", function() {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    });
+</script>
+
+<main class="flex-shrink-0">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3" aria-label="Navigation principale">
+        <div class="container px-5 d-flex align-items-center">
+            <a class="navbar-brand d-flex align-items-center" href="index.html" aria-label="Retour à l'accueil">
+                <img src="ressources/logo-lvdn.png" alt="Logo La Voix du Nord" class="me-2" style="height: 40px;">
+                <span class="fw-bolder text-primary">Portfolio - Antoine Gandelin</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Basculer la navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav text-center text-lg-start small fw-bolder">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" title="Accueil" aria-current="page">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#presentation" title="Qui suis-je ?">Qui suis-je ?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projets.html" title="Missions réalisées">Missions réalisées</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#impressions" title="Impressions">Impressions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#competences" title="Compétences">Compétences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#auto-evaluation" title="Auto-évaluation">Auto-évaluation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" title="Contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</main>
+</body>
+
+<section class="mission my-5">
+    <!-- Titre et visuel -->
+    <h2 class="text-center mb-4">Grand jeu de Noël 🎁</h2>
+    <div class="text-center mb-5">
+      <img src="ressources/visuels/header-jeu-noel.png" alt="Header jeu de Noël" class="img-fluid shadow">
+    </div>
+  
+    <!-- Contexte et Objectifs -->
+    <div class="container bg-light p-4 rounded mb-5">
+      <h3 class="text-center">📌 Contexte &amp; Objectifs</h3>
+      <hr class="w-25 mx-auto mb-4">
+      <p>
+        <strong>Contexte :</strong> Dans l'esprit des fêtes, La Voix du Nord a organisé le Grand jeu de Noël pour engager sa communauté. Ce jeu festif a permis aux lecteurs de participer à des tirages au sort et de gagner des cadeaux exclusifs, tout en renforçant l'image de marque et en valorisant l'ambiance de Noël.
+      </p>
+      <p class="mt-3">
+        <strong>Objectif :</strong> Stimuler l'engagement des lecteurs, augmenter le nombre d'inscriptions et créer une dynamique festive autour de La Voix du Nord grâce à une offre ludique et interactive.
+      </p>
+    </div>
+  
+    <!-- Rôle et Actions Menées -->
+    <div class="container bg-light p-4 rounded mb-5">
+      <h3 class="text-center">🛠️ Rôle &amp; Actions</h3>
+      <hr class="w-25 mx-auto mb-4">
+      <strong>Campagne d'emailing :</strong>
+      <ul>
+        <li>Programmation des envois d'e-mails dédiés à la promotion du jeu via Selligent.</li>
+        <li>Segmentation de l’audience pour cibler les lecteurs sensibles aux offres festives.</li>
+        <li>Analyse des performances (taux d'ouverture, CTR et conversions) via Qlik.</li>
+      </ul>
+      <strong>Création de scénarios interactifs sur le site :</strong>
+      <ul>
+        <li>Mise en place d’un undersocial interactif permettant aux utilisateurs de participer au jeu en direct.</li>
+        <li>Intégration d'un subheader festif et d'un bandeau promotionnel pour valoriser l'offre.</li>
+        <li>Suivi des interactions et ajustement des contenus via Piano Analytics.</li>
+      </ul>
+      <strong>Encarts dans les newsletters :</strong>
+      <ul>
+        <li>Intégration d'encarts visuels dans les newsletters pour promouvoir le Grand jeu de Noël.</li>
+        <li>Suivi des performances et de la conversion via Qlik.</li>
+      </ul>
+      <strong>Mise en place de push notifications :</strong>
+      <ul>
+        <li>Programmation de plusieurs push notifs sur l'appplication "Voix du Nord" via l'outil Airship, au fur et à mesure de la campagne, pour inciter les utilisateurs de l'app à participer.</li>
+        <li>Suivi des performances des notifications (engagement, horaires, OS…) avec les rapports d'Airship.</li>
+      </ul>
+    </div>
+  
+    <!-- Outils et Compétences Mobilisées -->
+    <div class="container bg-light p-4 rounded mb-5">
+      <h3 class="text-center">💻 Outils &amp; Compétences</h3>
+      <hr class="w-25 mx-auto mb-4">
+      <p><strong>Outils utilisés :</strong></p>
+      <ul>
+        <li>Selligent</li>
+        <li>Piano Analytics</li>
+        <li>Qlik</li>
+        <li>Airship</li>
+        <li>Visual Studio Code</li>
+      </ul>
+      <p class="mt-3"><strong>Compétences développées :</strong></p>
+      <ul>
+        <li>Création de scénarios interactifs et promotionnels sur le site Web</li>
+        <li>Gestion de campagnes d'emailing (programmation et segmentation)</li>
+        <li>Analyse et suivi des performances via des outils analytics</li>
+        <li>Mise en place de push notifications</li>
+        <li>Programmation HTML/CSS pour les scénarios site</li>
+      </ul>
+    </div>
+  
+    <!-- Résultats Obtenus -->
+    <div class="container bg-light p-4 rounded mb-5">
+      <h3 class="text-center">📈 Résultats</h3>
+      <hr class="w-25 mx-auto mb-4">
+      <ul>
+        <li>
+          <strong>Undersocial (du 01/12 au 25/12) :</strong> Génération de 3 640 clics sur le CTA pour 3 323 594 affichages, atteignant un CTR de 0,11%.
+        </li>
+        <li>
+          <strong>Subheader (du 01/12 au 25/12) :</strong> Génération de 7 621 clics sur le CTA (dont 4 537 sur desktop et 3 084 sur mobile) pour 6 880 262 affichages, atteignant un CTR de 0,11%.
+        </li>
+        <li>
+          <strong>Emailing :</strong> Envoi d'e-mails à plus de 3 500 000 destinataires (au total sur tous les emails envoyés) avec un taux d'ouverture de 23,43% (avec 547 034 vues uniques) et un taux de clics de 3,77% en moyenne (avec 48 253 clics uniques). De plus, le taux de réactivité est de 13,62% en moyenne et le taux de désabonnement est nul.
+        </li>
+        <li>
+          <strong>Encart newsletter (du 01/12 au 18/12) :</strong> 10 840 clics obtenus au total sur l'encart newsletter (Quotidienne Matin & Soir) avec 8 652 utilisateurs touchés, générant un impact notable sur les participations.
+        </li>
+        <li>
+          <strong>Push notification :</strong> 2 623 clics obtenus sur les push notifs envoyés à nos utilisateurs (dont 1 332 sur iOS et 1 291 sur Android) pour 430 458 notifications envoyées au total, soit un CTR de 0,61% en moyenne.
+        </li>
+      </ul>
+    </div>
+  
+    <!-- Impressions et Apprentissage -->
+    <div class="container bg-light p-4 rounded mb-5">
+      <h3 class="text-center">🔍 Impressions</h3>
+      <hr class="w-25 mx-auto mb-4">
+      <p>
+        <strong>Points forts :</strong> La campagne a su créer une ambiance festive et ludique, mobilisant efficacement la communauté autour du jeu de Noël. L'utilisation d'outils interactifs et d'une communication ciblée a permis d'augmenter l'engagement et les inscriptions.
+      </p>
+      <p class="mt-3">
+        <strong>Points faibles :</strong> Le parcours utilisateur pour participer au jeu pourrait être simplifié pour réduire les frictions. Un suivi plus détaillé par canal permettrait d'affiner encore davantage la stratégie pour les prochaines éditions.
+      </p>
+    </div>
+  
+    <!-- Illustrations et Ressources -->
+    <div class="container bg-light p-4 rounded mb-5">
+      <h3 class="text-center">🖼️ Illustrations &amp; Ressources</h3>
+      <hr class="w-25 mx-auto mb-4">
+      <div class="d-flex flex-wrap justify-content-center gap-3">
+        <a href="ressources/visuels/" class="btn btn-primary px-4 py-3" target="_blank">
+          Voir l'undersocial
+        </a>
+        <a href="ressources/visuels/encart-nl-jeu-noel.png" class="btn btn-primary px-4 py-3" target="_blank">
+          Voir l'encart newsletter
+        </a>
+        <a href="ressources/visuels/push-notif-jeu-noel-details.PNG" class="btn btn-primary px-4 py-3" target="_blank">
+          Voir le push notif
+        </a>
+        <a href="ressources/statistiques/stats-grand-jeu-de-noel.ods" class="btn btn-primary px-4 py-3" download="">
+          Voir les statistiques
+        </a>
+      </div>
+    </div>
+  
+    <!-- Téléchargement du Projet -->
+    <div class="container my-5 text-center">
+      <p class="text-center">Si vous souhaitez télécharger le projet dans sa globalité, cliquez ci-dessous :</p>
+      <div class="d-flex justify-content-center">
+        <a class="btn btn-primary px-4 py-3" href="ressources/projets/grand_jeu_noel.zip" download="">
+          <i class="bi bi-download"></i>&nbsp; Télécharger le projet
+        </a>
+      </div>
+    </div>
+  </section>
+  
+    <section class="bg-light py-5" id="contact">
+        <div class="container px-5">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bolder">Un échange sur mon alternance à La Voix du Nord ? 🔎</h2>
+                    <p class="lead fw-normal mb-4">
+                        Si mon expérience et mes compétences t'intéressent, n'hésite pas à me contacter !
+                    </p>
+                    <div class="text-center">
+                        <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="contact.html"
+                            title="Me contacter">Me contacter
+                        </a>
+                    </div>
+                    <br><br>
+                    <h4 class="fw-bold">Restons connectés !</h4>
+                    <p class="mb-4">Tu peux également me joindre via ces plateformes :</p>
+                    <div class="d-flex justify-content-center fs-3 gap-4">
+                        <a class="text-gradient" href="mailto:antoine.gandelin@gmail.com" aria-label="Email"
+                            title="Email"><i class="bi bi-envelope"></i></a>
+                        <a class="text-gradient" href="tel:0651276733" aria-label="Téléphone" title="Téléphone"><i
+                                class="bi bi-telephone"></i></a>
+                        <a class="text-gradient" href="https://www.linkedin.com/in/antoine-gandelin/" target="_blank"
+                            rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+        </div>
+    </section>    
+  </main>
+
+  <footer class="bg-gradient-primary-to-secondary py-4 mt-auto">
+    <div class="container px-5">
+        <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+            <div class="col-auto">
+                <div class="small m-0 text-white">
+                    &copy; 2024-2025 <strong>Antoine Gandelin</strong> / <strong>La Voix du Nord</strong> &middot; 
+                    <a href="https://github.com/twbs/bootstrap/blob/v4.0.0/LICENSE" target="_blank" title="MIT Licence" class="text-white">MIT Licence</a>
+                </div>
+            </div>
+            <br>
+            <div class="col-auto">
+                <div class="d-flex gap-3">
+                    <a class="text-white" href="https://www.linkedin.com/in/antoine-gandelin/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    <a class="text-white" href="tel:0651276733" title="Téléphone"><i class="bi bi-telephone"></i></a>
+                    <a class="text-white" href="mailto:antoine.gandelin@gmail.com" title="Email"><i class="bi bi-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>    
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/scripts.js"></script>
+
+</body>
+
+</html>

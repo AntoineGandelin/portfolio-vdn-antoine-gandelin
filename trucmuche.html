@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="title" content="Jeu du Trucmuche 2024" />
+    <title>Jeu du Trucmuche 2024</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="icon" href="ressources/logo-lvdn.png">
+
+    <style>
+        @media (max-width: 991px) {
+            .navbar-collapse {
+                background-color: #fff;
+            }
+            .navbar-nav {
+                width: 100%;
+                text-align: center;
+                margin-top: 10px;
+            }
+            .navbar-nav > li {
+                display: block;
+                margin-bottom: 10px;
+            }
+            .btn-lg {
+                font-size: 1rem;
+                padding: 12px 24px;
+            }
+            .img-fluid {
+                max-width: 100%;
+                height: auto;
+            }
+            .container {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            .footer-icons a {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+    
+</head>
+
+<body class="d-flex flex-column h-100 bg-white">
+
+
+<button id="backToTop" title="Retour en haut de la page" aria-label="Retour en haut">
+    ☝
+</button>
+
+<style>
+    #backToTop {
+        display: none;
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        z-index: 100;
+        width: 50px;
+        height: 50px;
+        background-color: #1b52bb;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 25px;
+        cursor: pointer;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    #backToTop:hover {
+        background-color: #0d3a8f;
+    }
+</style>
+
+<script>
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        const backToTopButton = document.getElementById("backToTop");
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    document.getElementById("backToTop").addEventListener("click", function() {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    });
+</script>
+
+<main class="flex-shrink-0">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3" aria-label="Navigation principale">
+        <div class="container px-5 d-flex align-items-center">
+            <a class="navbar-brand d-flex align-items-center" href="index.html" aria-label="Retour à l'accueil">
+                <img src="ressources/logo-lvdn.png" alt="Logo La Voix du Nord" class="me-2" style="height: 40px;">
+                <span class="fw-bolder text-primary">Portfolio - Antoine Gandelin</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Basculer la navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav text-center text-lg-start small fw-bolder">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" title="Accueil" aria-current="page">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#presentation" title="Qui suis-je ?">Qui suis-je ?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projets.html" title="Missions réalisées">Missions réalisées</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#impressions" title="Impressions">Impressions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#competences" title="Compétences">Compétences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#auto-evaluation" title="Auto-évaluation">Auto-évaluation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" title="Contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</main>
+</body>
+
+<section class="mission my-5">
+    <!-- Titre et visuel -->
+    <h2 class="text-center mb-4">Jeu du Trucmuche 2024 🔎</h2>
+    <div class="text-center mb-5">
+      <img src="ressources/visuels/header-trucmuche.png" alt="Jeu du Trucmuche 2024" class="img-fluid shadow" width="800px" height="400px">
+    </div>
+  
+    <!-- Contexte et Objectifs -->
+    <div class="container bg-light p-4 rounded mb-5">
+      <h3 class="text-center">📌 Contexte &amp; Objectifs</h3>
+      <hr class="w-25 mx-auto mb-4">
+      <p>
+        <strong>Contexte :</strong> Dans le cadre de mon alternance à La Voix du Nord, le Jeu du Trucmuche 2024 a été conçu pour offrir une expérience ludique et interactive, visant à rapprocher les lecteurs de la marque.
+      </p>
+      <p class="mt-3">
+        <strong>Objectif :</strong> Stimuler l'engagement des utilisateurs en leur proposant un jeu innovant et divertissant, tout en renforçant la notoriété et la proximité avec La Voix du Nord.
+      </p>
+    </div>
+  
+    <!-- Rôle et Actions Menées -->
+    <div class="container bg-light p-4 rounded mb-5">
+      <h3 class="text-center">🛠️ Rôle &amp; Actions</h3>
+      <hr class="w-25 mx-auto mb-4">
+      <strong>Campagne d'emailing :</strong>
+      <ul>
+        <li>Programmation des envois d'e-mails dédiés à la promotion du jeu via Selligent.</li>
+        <li>Segmentation de l’audience pour cibler les lecteurs.</li>
+        <li>Analyse des performances (taux d'ouverture, CTR et conversions) via Qlik.</li>
+      </ul>
+      <strong>Création de scénarios interactifs sur le site :</strong>
+      <ul>
+        <li>Mise en place d’un undersocial interactif permettant aux utilisateurs de participer au jeu en direct.</li>
+        <li>Suivi des interactions et ajustement des contenus via Piano Analytics.</li>
+      </ul>
+    </div>
+  
+    <!-- Outils et Compétences Mobilisées -->
+    <div class="container bg-light p-4 rounded mb-5">
+      <h3 class="text-center">💻 Outils &amp; Compétences</h3>
+      <hr class="w-25 mx-auto mb-4">
+      <p><strong>Outils utilisés :</strong></p>
+      <ul>
+        <li>Selligent</li>
+        <li>Piano Analytics</li>
+        <li>Qlik</li>
+      </ul>
+      <p class="mt-3"><strong>Compétences développées :</strong></p>
+      <ul>
+        <li>Création de scénarios interactifs et promotionnels sur le site Web</li>
+        <li>Gestion de campagnes d'emailing (programmation et segmentation)</li>
+        <li>Analyse et suivi des performances via des outils analytics</li>
+      </ul>
+    </div>
+  
+    <!-- Résultats Obtenus -->
+    <div class="container bg-light p-4 rounded mb-5">
+      <h3 class="text-center">📈 Résultats</h3>
+      <hr class="w-25 mx-auto mb-4">
+      <ul>
+        <li>
+          <strong>Undersocial (du 27/09 au 24/10) :</strong> Génération de 2 345 clics sur le CTA pour 2 281 952 affichages, atteignant un CTR de 0,10%.
+        </li>
+        <li>
+          <strong>Emailing :</strong> Envoi d'e-mails à plus de 1 200 000 destinataires (au total sur tous les emails envoyés) avec un taux d'ouverture de 26,16% (avec 209 001 vues uniques) et un taux de clics de 1,49% en moyenne (avec 10 020 clics uniques). De plus, le taux de réactivité est de 5,45% en moyenne et le taux de désabonnement est nul.
+        </li>
+      </ul>
+    </div>
+  
+    <!-- Impressions et Apprentissage -->
+    <div class="container bg-light p-4 rounded mb-5">
+      <h3 class="text-center">🔍 Impressions</h3>
+      <hr class="w-25 mx-auto mb-4">
+      <p>
+        <strong>Points forts :</strong> Le jeu a su capter l'attention grâce à son approche innovante et ludique, créant une forte interaction entre La Voix du Nord et ses lecteurs.
+      </p>
+      <p class="mt-3">
+        <strong>Points faibles :</strong> Quelques ajustements étaient nécessaires pour fluidifier le parcours utilisateur et améliorer encore l'expérience de jeu.
+      </p>
+    </div>
+  
+    <!-- Illustrations et Ressources -->
+    <div class="container bg-light p-4 rounded mb-5">
+      <h3 class="text-center">🖼️ Illustrations &amp; Ressources</h3>
+      <hr class="w-25 mx-auto mb-4">
+      <div class="d-flex flex-wrap justify-content-center gap-3">
+        <a href="ressources/visuels/" class="btn btn-primary px-4 py-3" target="_blank">
+          Voir l'undersocial
+        </a>
+        <a href="ressources/statistiques/stats-jeu-trucmuche.ods" class="btn btn-primary px-4 py-3" download>
+          Voir les statistiques
+        </a>
+      </div>
+    </div>
+  
+    <!-- Téléchargement du Projet -->
+    <div class="container my-5 text-center">
+      <p class="text-center">Si vous souhaitez télécharger l'intégralité du projet, cliquez ci-dessous :</p>
+      <div class="d-flex justify-content-center">
+        <a class="btn btn-primary px-4 py-3" href="ressources/projets/jeu_trucmuche2024.zip" download>
+          <i class="bi bi-download"></i>&nbsp; Télécharger le projet
+        </a>
+      </div>
+    </div>
+  </section>
+  
+
+    <section class="bg-light py-5" id="contact">
+        <div class="container px-5">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bolder">Un échange sur mon alternance à La Voix du Nord ? 🔎</h2>
+                    <p class="lead fw-normal mb-4">
+                        Si mon expérience et mes compétences t'intéressent, n'hésite pas à me contacter !
+                    </p>
+                    <div class="text-center">
+                        <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="contact.html"
+                            title="Me contacter">Me contacter
+                        </a>
+                    </div>
+                    <br><br>
+                    <h4 class="fw-bold">Restons connectés !</h4>
+                    <p class="mb-4">Tu peux également me joindre via ces plateformes :</p>
+                    <div class="d-flex justify-content-center fs-3 gap-4">
+                        <a class="text-gradient" href="mailto:antoine.gandelin@gmail.com" aria-label="Email"
+                            title="Email"><i class="bi bi-envelope"></i></a>
+                        <a class="text-gradient" href="tel:0651276733" aria-label="Téléphone" title="Téléphone"><i
+                                class="bi bi-telephone"></i></a>
+                        <a class="text-gradient" href="https://www.linkedin.com/in/antoine-gandelin/" target="_blank"
+                            rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+        </div>
+    </section>    
+  </main>
+
+  <footer class="bg-gradient-primary-to-secondary py-4 mt-auto">
+    <div class="container px-5">
+        <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+            <div class="col-auto">
+                <div class="small m-0 text-white">
+                    &copy; 2024-2025 <strong>Antoine Gandelin</strong> / <strong>La Voix du Nord</strong> &middot; 
+                    <a href="https://github.com/twbs/bootstrap/blob/v4.0.0/LICENSE" target="_blank" title="MIT Licence" class="text-white">MIT Licence</a>
+                </div>
+            </div>
+            <br>
+            <div class="col-auto">
+                <div class="d-flex gap-3">
+                    <a class="text-white" href="https://www.linkedin.com/in/antoine-gandelin/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    <a class="text-white" href="tel:0651276733" title="Téléphone"><i class="bi bi-telephone"></i></a>
+                    <a class="text-white" href="mailto:antoine.gandelin@gmail.com" title="Email"><i class="bi bi-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>    
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/scripts.js"></script>
+
+</body>
+
+</html>
