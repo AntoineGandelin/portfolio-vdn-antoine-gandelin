@@ -159,7 +159,24 @@
     <!-- Titre et visuel -->
     <h2 class="text-center mb-4">Face aux lecteurs - Denis Brogniart 🎙️</h2>
     <div class="text-center mb-5">
-      <img src="ressources/visuels/header-fal-denis-brogniart.png" alt="Face aux lecteurs - Denis Brogniart" class="img-fluid shadow" style="max-width:800px;">
+      <style>
+        /* Par défaut, limite à 800px sur grand écran */
+        .img-responsive-header {
+          max-width: 800px;
+          width: 100%;
+          height: auto;
+        }
+      
+        /* Sur mobile, occupe 100% de la largeur du conteneur */
+        @media (max-width: 768px) {
+          .img-responsive-header {
+            max-width: 100% !important;
+          }
+        }
+      </style>
+      
+      <img src="ressources/visuels/header-fal-denis-brogniart.png" alt="Face aux lecteurs - Denis Brogniart" class="img-fluid shadow img-responsive-header">
+        
     </div>
   
     <!-- Contexte et Objectifs -->
