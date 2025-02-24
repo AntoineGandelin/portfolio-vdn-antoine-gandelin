@@ -146,6 +146,21 @@
     <!-- Titre et visuel -->
     <h2 class="text-center mb-4">Sortie du nouveau format de l'Atlas Eco 🚀</h2>
     <div class="text-center mb-5">
+      <style>
+        /* Par défaut, limite à 800px sur grand écran */
+        .img-responsive-header {
+          max-width: 750px;
+          width: 100%;
+          height: auto;
+        }
+      
+        /* Sur mobile, occupe 100% de la largeur du conteneur */
+        @media (max-width: 768px) {
+          .img-responsive-header {
+            max-width: 100% !important;
+          }
+        }
+      </style>
       <img src="ressources/visuels/encart-nl-atlas-eco-1.png" alt="Header Atlas Eco" class="img-fluid shadow">
     </div>
   
