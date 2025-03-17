@@ -4,8 +4,12 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="title" content="Derby du Nord" />
-    <title>Derby du Nord</title>
+    <meta name="title" content="Portfolio - Antoine Gandelin" />
+    <meta name="description"
+        content="Etudiant de 22 ans passionné par le digital, découvre mes compétences ainsi que mes différents projets." />
+    <meta name="author" content="Antoine GANDELIN" />
+    <meta name="google-site-verification" content="PDulQWkzLDFfd3fmM8YrlK3K6W_PE4rWOdc3q-uZzSo" />
+    <title>Portfolio - Antoine Gandelin</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,58 +18,76 @@
         rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
     <link href="styles.css" rel="stylesheet" />
-    <link rel="icon" href="ressources/logo-lvdn.png">
+    <link rel="icon" href="ressources/ia.svg">
+    <link rel="canonical" href="https://www.antoine-gandelin.fr">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QYSSQ2VWBJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QYSSQ2VWBJ');
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MCPQQ66T');</script>
+<!-- End Google Tag Manager -->
 
     <style>
         @media (max-width: 991px) {
             .navbar-collapse {
                 background-color: #fff;
             }
+
             .navbar-nav {
                 width: 100%;
-                text-align: center;
+                text-align: right;
                 margin-top: 10px;
             }
-            .navbar-nav > li {
+
+            .navbar-nav>li {
                 display: block;
                 margin-bottom: 10px;
             }
-            .btn-lg {
-                font-size: 1rem;
-                padding: 12px 24px;
+
+            .badge.bg-gradient-primary-to-secondary.text-white.mb-4 {
+                font-size: x-small;
             }
-            .img-fluid {
-                max-width: 100%;
-                height: auto;
-            }
-            .container {
-                padding-left: 15px;
-                padding-right: 15px;
-            }
-            .footer-icons a {
-                font-size: 1.5rem;
+
+            .dropdown-item {
+                text-align: right;
             }
         }
     </style>
-
     <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-    
 </head>
 
 <body class="d-flex flex-column h-100 bg-white">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MCPQQ66T" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
-
+<!-- HTML pour le bouton -->
 <button id="backToTop" title="Retour en haut de la page" aria-label="Retour en haut">
     ☝
 </button>
 
 <style>
+    /* Styles pour le bouton */
     #backToTop {
-        display: none;
+        display: none; /* Cacher le bouton au d�part */
         position: fixed;
         bottom: 25px;
         right: 25px;
-        z-index: 100;
+        z-index: 100; /* Toujours au-dessus des autres �l�ments */
         width: 50px;
         height: 50px;
         background-color: #1b52bb;
@@ -78,265 +100,250 @@
         transition: opacity 0.3s ease-in-out;
     }
 
+    /* Effet au survol */
     #backToTop:hover {
         background-color: #0d3a8f;
     }
 </style>
 
 <script>
+    // Faire appara�tre le bouton quand l'utilisateur fait d�filer la page
     window.onscroll = function() {scrollFunction()};
 
     function scrollFunction() {
         const backToTopButton = document.getElementById("backToTop");
         if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-            backToTopButton.style.display = "block";
+            backToTopButton.style.display = "block"; // Afficher le bouton apr�s avoir d�fil� de 300px
         } else {
-            backToTopButton.style.display = "none";
+            backToTopButton.style.display = "none"; // Cacher le bouton quand on est en haut
         }
     }
 
+    // Retour en haut de la page quand l'utilisateur clique sur le bouton
     document.getElementById("backToTop").addEventListener("click", function() {
-        window.scrollTo({top: 0, behavior: 'smooth'});
+        window.scrollTo({top: 0, behavior: 'smooth'}); // D�filement fluide
     });
 </script>
 
-<main class="flex-shrink-0">
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3" aria-label="Navigation principale">
-        <div class="container px-5 d-flex align-items-center">
-            <a class="navbar-brand d-flex align-items-center" href="index.html" aria-label="Retour à l'accueil">
-                <img src="ressources/logo-lvdn.png" alt="Logo La Voix du Nord" class="me-2" style="height: 40px;">
-                <span class="fw-bolder text-primary">Portfolio - Antoine Gandelin</span>
-            </a>
+  <main class="flex-shrink-0">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm" aria-label="Navigation principale">
+          <div class="container px-5">
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Basculer la navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+              <a class="navbar-brand" href="index.html" aria-label="Retour � l'accueil du Portfolio Antoine Gandelin">
+                <span class="fw-bolder text-primary" title="Antoine Gandelin">
+                    <img src="ressources/ia.svg" width="42px" height="42px">
+                    &nbsp;
+                    Antoine Gandelin
+                </span>
+              </a>
 
-            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                <ul class="navbar-nav text-center text-lg-start small fw-bolder">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html" title="Accueil" aria-current="page">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#presentation" title="Qui suis-je ?">Qui suis-je ?</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="projets.html" title="Missions réalisées">Missions réalisées</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#impressions" title="Impressions">Impressions</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#competences" title="Compétences">Compétences</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#auto-evaluation" title="Auto-évaluation">Auto-évaluation</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html" title="Contact">Contact</a>
-                    </li>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                  aria-expanded="false" aria-label="Basculer la navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                  <li class="nav-item"><a class="nav-link" href="index.html" title="Accueil">Accueil</a></li>
+                  <li class="nav-item"><a class="nav-link" href="cv.html" title="CV">CV</a></li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownProjets" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Voir les projets d'Antoine Gandelin">Projets</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownProjets">
+                        <li>
+                            <a class="dropdown-item" href="projets-crm-marketing-digital.html" title="CRM & Marketing Digital">CRM & Marketing Digital</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="projets-seo-acquisition-digitale.html" title="SEO & Acquisition Digitale">SEO & Acquisition Digitale</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="projets-ux-ui-design.html" title="UX/UI Design">UX/UI Design</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="projets-communication.html" title="Communication">Communication</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="projets-developpement-web.html" title="Développement Web">Développement Web</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="projets-photos-videos.html" title="Montage photos/vidéos">Montage photos/vidéos</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="projets-personnels.html" title="Projets Personnels & Freelance">Projets Personnels & Freelance</a>
+                        </li>
+                    </ul>
+                </li>
+                  <li class="nav-item"><a class="nav-link" href="articles.html" title="Articles">Articles</a></li>
+                  <li class="nav-item"><a class="nav-link" href="index.html#recommandations" title="Recommandations">Recommandations</a></li>
+                  <li class="nav-item"><a class="nav-link" href="contact.html" title="Contact">Contact</a></li>
                 </ul>
-            </div>
-        </div>
-    </nav>
-</main>
+              </div>
+          </div>
+      </nav>
+  </main>
 </body>
 
 <section class="mission my-5">
-    <!-- Titre et visuel -->
-    <h2 class="text-center mb-4">Derby du Nord : Lens vs Lille ⚽</h2>
-    <div class="text-center mb-5">
-      <style>
-        /* Par défaut, limite à 800px sur grand écran */
+  <!-- Titre et visuel -->
+  <h2 class="text-center mb-4">Derby du Nord : Lens vs Lille ⚽</h2>
+  <div class="text-center mb-5">
+    <style>
+      /* Par défaut, limite à 800px sur grand écran */
+      .img-responsive-header {
+        max-width: 750px;
+        width: 100%;
+        height: auto;
+      }
+    
+      /* Sur mobile, occupe 100% de la largeur du conteneur */
+      @media (max-width: 768px) {
         .img-responsive-header {
-          max-width: 750px;
-          width: 100%;
-          height: auto;
+          max-width: 100% !important;
         }
-      
-        /* Sur mobile, occupe 100% de la largeur du conteneur */
-        @media (max-width: 768px) {
-          .img-responsive-header {
-            max-width: 100% !important;
-          }
-        }
-      </style>
-      <img src="ressources/visuels/header-derby-du-nord.png" alt="Header Derby du Nord : Lens vs Lille" class="img-fluid shadow">
-    </div>
-  
-    <!-- Contexte et Objectifs -->
-    <div class="container bg-light p-4 rounded mb-5">
-      <h3 class="text-center">📌 Contexte &amp; Objectifs</h3>
-      <hr class="w-25 mx-auto mb-4">
-      <p>
-        <strong>Contexte :</strong> Le 26 octobre 2024, le Derby du Nord opposant Lens et Lille a rassemblé des milliers de passionnés de football. Cet événement phare a permis aux fans de vivre l'intensité du match en direct et a renforcé l'image de La Voix du Nord en tant que référence sportive.
-      </p>
-      <p class="mt-3">
-        <strong>Objectif :</strong> Augmenter l'audience et l'interaction autour de l'événement en diffusant le match en direct, tout en stimulant les échanges et en consolidant la couverture médiatique sur nos canaux digitaux.
-      </p>
-    </div>
-  
-    <!-- Rôle et Actions Menées -->
-    <div class="container bg-light p-4 rounded mb-5">
-      <h3 class="text-center">🛠️ Rôle &amp; Actions</h3>
-      <hr class="w-25 mx-auto mb-4">
-      <strong>Campagne d'emailing :</strong>
-      <ul>
-        <li>Programmation des envois d'e-mails promotionnels via Selligent pour informer abonnés et prospects.</li>
-        <li>Segmentation de l’audience pour cibler les fans de football et les lecteurs fidèles.</li>
-        <li>Analyse des performances post-campagne via Qlik (taux d'ouverture, CTR et inscriptions).</li>
-      </ul>
-      <strong>Diffusion en direct et interactivité sur le site :</strong>
-      <ul>
-        <li>Mise en place d'une plateforme de diffusion en direct intégrée pour suivre le match en temps réel.</li>
-        <li>Intégration d'un undersocial interactif permettant aux utilisateurs de réagir et commenter en direct.</li>
-        <li>Réalisation de tests A/B pour optimiser l'affichage et améliorer l'expérience utilisateur.</li>
-      </ul>
-      <strong>Encarts dans les newsletters :</strong>
-      <ul>
-        <li>Intégration d'encarts visuels dans les newsletters pour diriger le trafic vers la diffusion en direct.</li>
-        <li>Suivi des performances via Qlik pour mesurer l'impact sur l'engagement.</li>
-      </ul>
-    </div>
-  
-    <!-- Outils et Compétences Mobilisées -->
-    <div class="container bg-light p-4 rounded mb-5">
-      <h3 class="text-center">💻 Outils &amp; Compétences</h3>
-      <hr class="w-25 mx-auto mb-4">
-      <p><strong>Outils utilisés :</strong> Selligent, Qlik, Piano Analytics</p>
-      <p class="mt-3"><strong>Compétences développées :</strong></p>
-      <ul>
-        <li>Gestion de campagnes d'emailing et segmentation avancée.</li>
-        <li>Diffusion de contenus en direct et gestion de l'interactivité sur le site.</li>
-        <li>Analyse et suivi des performances via des outils analytics.</li>
-      </ul>
-    </div>
-  
-    <!-- Résultats Obtenus -->
-    <div class="container bg-light p-4 rounded mb-5">
-      <h3 class="text-center">📈 Résultats</h3>
-      <hr class="w-25 mx-auto mb-4">
-      <ul>
-        <li>
-          <strong>Undersocial (pour promouvoir l'offre "Derby" du 22/10 au 28/10) :</strong> Génération de 113 clics sur le CTA pour 100 213 affichages, atteignant un CTR de 0,11%.
-        </li>
-        <li>
-          <strong>Undersocial (pour consulter la playlist "Derby" du 22/10 au 28/10) :</strong> Génération de 46 clics sur le CTA pour 25 057 affichages, atteignant un CTR de 0,18%.
-        </li>
-        <li>
-          <strong>Subheader (pour participer au jeu "Derby" du 22/10 au 28/10) :</strong> Génération de 99 clics sur le CTA (dont 30 sur desktop et 69 sur mobile) pour 49 771 affichages, atteignant un CTR de 0,20%.
-        </li>
-        <li>
-          <strong>Bandeau boutique (pour promouvoir l'offre "Derby" du 22/10 au 28/10) :</strong> Génération de 3 clics sur le CTA pour 156 affichages, atteignant un CTR de 1,92%.
-        </li>
-        <li>
-          <strong>Bandeau sticky (pour participer au jeu "Derby" du 22/10 au 28/10) :</strong> Génération de 256 clics sur le CTA (et 32 clics sur la croix de fermeture) pour 37 418 affichages, atteignant un CTR de 0,68%.
-        </li>
-        <li>
-          <strong>Emailing :</strong> Envoi d'un e-mail pour promouvoir le jeu-concours à plus de 42 500 destinataires avec un taux d'ouverture de 31,15% (avec 13 246 vues uniques) et un taux de clics de 5,22% (avec 2 222 clics uniques). De plus, le taux de réactivité est de 16,77% et le taux de désabonnement est nul.
-        </li>
-        <li>
-          <strong>Encart newsletter (pour participer au jeu "Derby" du 22/10 au 23/10) :</strong> 523 clics obtenus au total sur l'encart newsletter (Quotidienne Soir, VDS, LOSC & RC Lens) avec 422 utilisateurs touchés, générant un impact notable sur les participations.
-        </li>
-        <li>
-          <strong>Encart newsletter (pour consulter la playlist "Derby" du 25/10 au 28/10) :</strong> 168 clics obtenus au total sur l'encart newsletter (VDS, Quotidienne Matin & Soir) avec 154 utilisateurs touchés, générant un léger impact sur l'audience.
-        </li>
-      </ul>
-    </div>
-  
-    <!-- Impressions et Apprentissage -->
-    <div class="container bg-light p-4 rounded mb-5">
-      <h3 class="text-center">🔍 Impressions</h3>
-      <hr class="w-25 mx-auto mb-4">
-      <p>
-        <strong>Points forts :</strong> La diffusion en direct a généré une forte interaction entre les fans, renforçant l'image de La Voix du Nord comme acteur engagé dans le sport. La coordination multicanal a assuré une large couverture de l'événement.
-      </p>
-      <p class="mt-3">
-        <strong>Points faibles :</strong> Quelques ajustements dans le parcours utilisateur auraient pu améliorer la fluidité de l'expérience. Un suivi plus détaillé des interactions aurait permis d'optimiser les futures diffusions.
-      </p>
-    </div>
-  
-    <!-- Illustrations et Ressources -->
-    <div class="container bg-light p-4 rounded mb-5">
-      <h3 class="text-center">🖼️ Illustrations &amp; Ressources</h3>
-      <hr class="w-25 mx-auto mb-4">
-      <div class="d-flex flex-wrap justify-content-center gap-3">
-        <a href="ressources/visuels/undersocial-derby-nord.PNG" class="btn btn-primary px-4 py-3" target="_blank">
-          Voir l'undersocial (offre d'abonnement)
-        </a>
-        <a href="ressources/visuels/subheader-jeu-derby.PNG" class="btn btn-primary px-4 py-3" target="_blank">
-          Voir le subheader
-        </a>
-        <a href="ressources/visuels/subheader-jeu-derby-derniere-chance.PNG" class="btn btn-primary px-4 py-3" target="_blank">
-          Voir le subheader (dernière chance)
-        </a>
-        <a href="ressources/visuels/bandeau-sticky-derby-nord.PNG" class="btn btn-primary px-4 py-3" target="_blank">
-          Voir le bandeau sticky
-        </a>
-        <a href="ressources/visuels/bandeau-sticky-jeu-derby-derniere-chance.PNG" class="btn btn-primary px-4 py-3" target="_blank">
-          Voir le bandeau sticky (dernière chance)
-        </a>
-        <a href="ressources/visuels/bandeau-btq-derby-nord.PNG" class="btn btn-primary px-4 py-3" target="_blank">
-          Voir le bandeau boutique
-        </a>
-        <a href="ressources/visuels/encart-nl-playlist-derby.png" class="btn btn-primary px-4 py-3" target="_blank">
-          Voir l'encart newsletter (playlist)
-        </a>
-        <a href="ressources/visuels/encart-nl-jeu-concours-derby.png" class="btn btn-primary px-4 py-3" target="_blank">
-          Voir l'encart newsletter (jeu-concours)
-        </a>
-        <a href="ressources/statistiques/stats-derby-du-nord.ods" class="btn btn-primary px-4 py-3" download>
-          Voir les statistiques
-        </a>
-      </div>
-    </div>
-  
-    <!-- Téléchargement du Projet -->
-    <div class="container my-5 text-center">
-      <p class="text-center">Si vous souhaitez télécharger le projet dans sa globalité, cliquez ci-dessous :</p>
-      <div class="d-flex justify-content-center">
-        <a class="btn btn-primary px-4 py-3" href="ressources/projets/derby-du-nord.zip" download>
-          <i class="bi bi-download"></i>&nbsp; Télécharger le projet
-        </a>
-      </div>
-    </div>
-  </section>
-  
+      }
+    </style>
+    <img src="ressources/vdn/visuels/header-derby-du-nord.png" alt="Header Derby du Nord : Lens vs Lille" class="img-fluid shadow">
+  </div>
 
-    <section class="bg-light py-5" id="contact">
-        <div class="container px-5">
-                <div class="text-center mb-5">
-                    <h2 class="fw-bolder">Un échange sur mon alternance à La Voix du Nord ? 🔎</h2>
-                    <p class="lead fw-normal mb-4">
-                        Si mon expérience et mes compétences t'intéressent, n'hésite pas à me contacter !
-                    </p>
-                    <div class="text-center">
-                        <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="contact.html"
-                            title="Me contacter">Me contacter
-                        </a>
-                    </div>
-                    <br><br>
-                    <h4 class="fw-bold">Restons connectés !</h4>
-                    <p class="mb-4">Tu peux également me joindre via ces plateformes :</p>
-                    <div class="d-flex justify-content-center fs-3 gap-4">
-                        <a class="text-gradient" href="mailto:antoine.gandelin@gmail.com" aria-label="Email"
-                            title="Email"><i class="bi bi-envelope"></i></a>
-                        <a class="text-gradient" href="tel:0651276733" aria-label="Téléphone" title="Téléphone"><i
-                                class="bi bi-telephone"></i></a>
-                        <a class="text-gradient" href="https://www.linkedin.com/in/antoine-gandelin/" target="_blank"
-                            rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
-                    </div>
+  <!-- Contexte et Objectifs -->
+  <div class="container bg-light p-4 rounded mb-5">
+    <h3 class="text-center">📌 Contexte &amp; Objectifs</h3>
+    <hr class="w-25 mx-auto mb-4">
+    <p>
+      <strong>Contexte :</strong> Le 26 octobre 2024, le Derby du Nord opposant Lens et Lille a rassemblé des milliers de passionnés de football. Cet événement phare a permis aux fans de vivre l'intensité du match en direct et a renforcé l'image de La Voix du Nord en tant que référence sportive.
+    </p>
+    <p class="mt-3">
+      <strong>Objectif :</strong> Augmenter l'audience et l'interaction autour de l'événement en diffusant le match en direct, tout en stimulant les échanges et en consolidant la couverture médiatique sur nos canaux digitaux.
+    </p>
+  </div>
+
+  <!-- Rôle et Actions Menées -->
+  <div class="container bg-light p-4 rounded mb-5">
+    <h3 class="text-center">🛠️ Rôle &amp; Actions</h3>
+    <hr class="w-25 mx-auto mb-4">
+    <strong>Campagne d'emailing :</strong>
+    <ul>
+      <li>Programmation des envois d'e-mails promotionnels via Selligent pour informer abonnés et prospects.</li>
+      <li>Segmentation de l’audience pour cibler les fans de football et les lecteurs fidèles.</li>
+      <li>Analyse des performances post-campagne via Qlik (taux d'ouverture, CTR et inscriptions).</li>
+    </ul>
+    <strong>Diffusion en direct et interactivité sur le site :</strong>
+    <ul>
+      <li>Mise en place d'une plateforme de diffusion en direct intégrée pour suivre le match en temps réel.</li>
+      <li>Intégration d'un undersocial interactif permettant aux utilisateurs de réagir et commenter en direct.</li>
+      <li>Réalisation de tests A/B pour optimiser l'affichage et améliorer l'expérience utilisateur.</li>
+    </ul>
+    <strong>Encarts dans les newsletters :</strong>
+    <ul>
+      <li>Intégration d'encarts visuels dans les newsletters pour diriger le trafic vers la diffusion en direct.</li>
+      <li>Suivi des performances via Qlik pour mesurer l'impact sur l'engagement.</li>
+    </ul>
+  </div>
+
+  <!-- Outils et Compétences Mobilisées -->
+  <div class="container bg-light p-4 rounded mb-5">
+    <h3 class="text-center">💻 Outils &amp; Compétences</h3>
+    <hr class="w-25 mx-auto mb-4">
+    <p><strong>Outils utilisés :</strong> Selligent, Qlik, Piano Analytics</p>
+    <p class="mt-3"><strong>Compétences développées :</strong></p>
+    <ul>
+      <li>Gestion de campagnes d'emailing et segmentation avancée.</li>
+      <li>Diffusion de contenus en direct et gestion de l'interactivité sur le site.</li>
+      <li>Analyse et suivi des performances via des outils analytics.</li>
+    </ul>
+  </div>
+
+  <!-- Impressions et Apprentissage -->
+  <div class="container bg-light p-4 rounded mb-5">
+    <h3 class="text-center">🔍 Impressions</h3>
+    <hr class="w-25 mx-auto mb-4">
+    <p>
+      <strong>Points forts :</strong> La diffusion en direct a généré une forte interaction entre les fans, renforçant l'image de La Voix du Nord comme acteur engagé dans le sport. La coordination multicanal a assuré une large couverture de l'événement.
+    </p>
+    <p class="mt-3">
+      <strong>Points faibles :</strong> Quelques ajustements dans le parcours utilisateur auraient pu améliorer la fluidité de l'expérience. Un suivi plus détaillé des interactions aurait permis d'optimiser les futures diffusions.
+    </p>
+  </div>
+
+  <!-- Illustrations et Ressources -->
+  <div class="container bg-light p-4 rounded mb-5">
+    <h3 class="text-center">🖼️ Illustrations &amp; Ressources</h3>
+    <hr class="w-25 mx-auto mb-4">
+    <div class="d-flex flex-wrap justify-content-center gap-3">
+      <a href="ressources/vdn/visuels/undersocial-derby-nord.PNG" class="btn btn-primary px-4 py-3" target="_blank">
+        Voir l'undersocial (offre d'abonnement)
+      </a>
+      <a href="ressources/vdn/visuels/subheader-jeu-derby.PNG" class="btn btn-primary px-4 py-3" target="_blank">
+        Voir le subheader
+      </a>
+      <a href="ressources/vdn/visuels/subheader-jeu-derby-derniere-chance.PNG" class="btn btn-primary px-4 py-3" target="_blank">
+        Voir le subheader (dernière chance)
+      </a>
+      <a href="ressources/vdn/visuels/bandeau-sticky-derby-nord.PNG" class="btn btn-primary px-4 py-3" target="_blank">
+        Voir le bandeau sticky
+      </a>
+      <a href="ressources/vdn/visuels/bandeau-sticky-jeu-derby-derniere-chance.PNG" class="btn btn-primary px-4 py-3" target="_blank">
+        Voir le bandeau sticky (dernière chance)
+      </a>
+      <a href="ressources/vdn/visuels/bandeau-btq-derby-nord.PNG" class="btn btn-primary px-4 py-3" target="_blank">
+        Voir le bandeau boutique
+      </a>
+      <a href="ressources/vdn/visuels/encart-nl-playlist-derby.png" class="btn btn-primary px-4 py-3" target="_blank">
+        Voir l'encart newsletter (playlist)
+      </a>
+      <a href="ressources/vdn/visuels/encart-nl-jeu-concours-derby.png" class="btn btn-primary px-4 py-3" target="_blank">
+        Voir l'encart newsletter (jeu-concours)
+      </a>
+    </div>
+  </div>
+
+  <!-- Téléchargement du Projet -->
+  <div class="container my-5 text-center">
+    <p class="text-center">Si vous souhaitez télécharger le projet dans sa globalité, cliquez ci-dessous :</p>
+    <div class="d-flex justify-content-center">
+      <a class="btn btn-primary px-4 py-3" href="ressources/vdn/projets/derby-du-nord.zip" download>
+        <i class="bi bi-download"></i>&nbsp; Télécharger le projet
+      </a>
+    </div>
+  </div>
+</section>
+
+  <section class="bg-white py-5" id="contact">
+    <div class="container px-5">
+        <div class="rounded-4 py-5 px-4 px-md-5">
+            <div class="text-center mb-5">
+                <h2 class="fw-bolder">Une question ? Un besoin ? 🔎</h2>
+                <p class="lead fw-normal mb-0">
+                    Si tu es intéressé(e) par mon profil et mes compétences, n'hésite surtout pas à me contacter
+                    ! 😉
+                </p>
+                <br>
+                <div class="text-center">
+                    <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="contact.html"
+                        title="Me contacter">Me contacter
+                    </a>
                 </div>
+                <br>
+                <div class="d-flex justify-content-center fs-3 gap-4">
+                    <a class="text-gradient" href="mailto:antoine.gandelin@gmail.com" aria-label="Email"
+                        title="Email"><i class="bi bi-envelope"></i></a>
+                    <a class="text-gradient" href="tel:0651276733" aria-label="Téléphone" title="Téléphone"><i
+                            class="bi bi-telephone"></i></a>
+                    <a class="text-gradient" href="https://www.linkedin.com/in/antoine-gandelin/"
+                        target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><i
+                            class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
         </div>
-    </section>    
-  </main>
+    </div>
+</section>
 
-  <footer class="bg-gradient-primary-to-secondary py-4 mt-auto">
+<footer class="bg-gradient-primary-to-secondary py-4 mt-auto">
     <div class="container px-5">
         <div class="row align-items-center justify-content-between flex-column flex-sm-row">
             <div class="col-auto">
                 <div class="small m-0 text-white">
-                    &copy; 2024-2025 <strong>Antoine Gandelin</strong> / <strong>La Voix du Nord</strong> &middot; 
+                    © 2022-2025 <strong>Antoine Gandelin</strong> · 
                     <a href="https://github.com/twbs/bootstrap/blob/v4.0.0/LICENSE" target="_blank" title="MIT Licence" class="text-white">MIT Licence</a>
                 </div>
             </div>
@@ -350,11 +357,10 @@
             </div>
         </div>
     </div>
-</footer>    
+</footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/scripts.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
-</html>
+</html>		
